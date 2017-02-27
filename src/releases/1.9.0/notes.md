@@ -49,33 +49,22 @@ For more information, see the [documentation](/docs/1.9/administration/metrics/)
 
 - The new service deployment troubleshooting tool allows you to find out why your applications aren’t starting from the GUI and CLI.
 
-  ![Service deploy GUI](/assets/images/releases/serv-deploy-troubleshoot.gif)
+  ![Service deploy GUI](/assets/images/releases/dcos-offers.png)
 
 ## Improved GUI
 
 - New look and feel and improved navigation.
 
-  ![New GUI](/assets/images/releases/new-1-9-ui.gif)
+  ![New GUI](/assets/images/releases/dcos-dash.png)
 
 - Usability improvements to the service create workflow.
 
-  ![Improved GUI](/assets/images/releases/improved-gui.gif)
+  ![Improved GUI](/assets/images/releases/dcos-create.png)
 
 # Networking Services
 
 - CNI support for 3rd party CNI plugins.
 - Performance improvements across all networking features.
-
-# Developer Services
-
-- GitLab Runner (CI) is now available as a DC/OS service in the Universe.
-- Updates to the DC/OS testing harness ([shakedown](https://github.com/dcos/shakedown)):
-
-    - Pods support.
-    - Support for testing against clusters with OAuth.
-    - Better help output.
-    - Updated documentation.
-    - Utility methods for using Mesos-DNS, waiting on cluster actions and partitioning and reconnecting to DC/OS masters.
 
 # Other Improvements
 
