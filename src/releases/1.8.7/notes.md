@@ -1,4 +1,4 @@
-## [1.8.7 - Nov 14, 2016](/releases/1.8.6/)
+## [1.8.7 - Nov 14, 2016](/releases/1.8.7/)
 
 ### New and changed features
 - Marathon [1.3.6](https://github.com/mesosphere/marathon/releases).
