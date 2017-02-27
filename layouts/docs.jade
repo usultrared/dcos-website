@@ -223,7 +223,7 @@ html
                       h3
                         a(href='#{p.link}' title='#{p.title}')
                           != p.title
-                      p!= p.excerpt
+                      p.!= p.excerpt
                       ul.list-reset
                         each c in p.children
                           li

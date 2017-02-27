@@ -218,8 +218,20 @@ $('#docs-content img').each(function(index) {
 })
 
 /****************
-  Excerpt length Docs
+  truncate excerpt
 ****************/
-$('.related-pages > div').children().eq(1).each(function(index) {
-  console.log(this)
+function cut(n) {
+  return function textCutter(i, text) {
+    var short = text.substr(0, n);
+    if (/^\S/.test(text.substr(n)))
+      return short.replace(/\s+\S*$/, '…');
+    return short;
+  };
+}
+
+$('.related-pages > div > p').each(function(index) {
+  var excerpt = $(this).text();
+  if(excerpt.length > 200) {
+    $(this).text(cut(200));
+  }
 })
