@@ -191,20 +191,12 @@ Once changes are accepted and merged to the develop branch, CI will push the upd
     - When this PR is merged, the staging server is built: https://dev.dcos.io/docs/.
 
 
-1.  After the changes have been previewed and accepted on <https://dev.dcos.io/>, run this script from your local machine on the `develop` branch of this repository:
-
-    ```
-    $ git checkout develop
-    $ git pull
-    $ ci/promote.sh
-    ```
-
-    This script rebases `develop` to `master` and kicks off a CI build that deploys (`ci/deploy.sh`), updates redirects (`ci/update-redirects.sh`), and updates the S3 website config (`ci/update-website-conifg.sh`).
+1.  After the changes have been previewed and accepted on <https://dev.dcos.io/>, go on to [Promoting site to live](#promoting-site-to-live).
 
 
 ## Promoting site to live
 
-Once changes have been previewed and accepted on <https://dev.dcos.io/>, the maintainers will rebase `develop` to `master`:
+To promote the dev site to live, rebase `develop` to `master`:
 
 ```
 $ git checkout develop
