@@ -66,17 +66,6 @@ For more information, see the [documentation](/docs/1.9/administration/metrics/)
 - CNI support for 3rd party CNI plugins.
 - Performance improvements across all networking features.
 
-# Developer Services
-
-- GitLab Runner (CI) is now available as a DC/OS service in the Universe.
-- Updates to the DC/OS testing harness ([shakedown](https://github.com/dcos/shakedown)):
-
-    - Pods support.
-    - Support for testing against clusters with OAuth.
-    - Better help output.
-    - Updated documentation.
-    - Utility methods for using Mesos-DNS, waiting on cluster actions and partitioning and reconnecting to DC/OS masters.
-
 # Other Improvements
 
 ## DC/OS Internals
