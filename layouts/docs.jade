@@ -89,13 +89,26 @@ mixin navItem(child)
 -
   var getChildrenFromAncestors = child => {
     var children = []
-    child.ancestry.children && child.ancestry.children.forEach(child => {
-      children.push({
-        menu_order: child.menu_order,
-        title: child.nav_title || child.title,
-        link: `/docs/${docsVersion}/${stripExtnameFromString(child.path)}`
+    if (child.path && child.path.substr(-8) === 'index.md') {
+      child.ancestry.children && child.ancestry.children.forEach(ancestryChild => {
+        if (child.path !== ancestryChild.path) {
+          children.push({
+            menu_order: ancestryChild.menu_order,
+            title: child.nav_title || ancestryChild.title,
+            link: `/docs/${docsVersion}/${stripExtnameFromString(ancestryChild.path)}`
+          })
+        }
       })
-    })
+      child.ancestry.siblings && child.ancestry.siblings.forEach(sibling => {
+        if (child.path !== sibling.path) {
+          children.push({
+            menu_order: sibling.menu_order,
+            title: sibling.nav_title || sibling.title,
+            link: `/docs/${docsVersion}/${stripExtnameFromString(sibling.path)}`
+          })
+        }
+      })
+    }
     return children.sort(sortByMenuOrder)
   }
 
