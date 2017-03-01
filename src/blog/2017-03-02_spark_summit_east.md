@@ -28,8 +28,8 @@ Jörg and I also spent time at the booth where we met folks who use Apache Spark
 
 *Jörg Schad and Kim Garshol at the Mesosphere booth*
 
-While at the event, Jörg and I also appeared on DC/OS Office Hours to discuss our impressions of the conference. We noted a lot of talk about Artificial Intelligence and Machine Learning at Spark Summit East, especially in the keynotes. Big data keeps getting bigger, allowing companies to train algorithms to do jobs that, up until now, fell solidly in the human realm. . Many talks also discussed live streaming data using Apache Spark, with mechanisms that integrate both archival and streaming data for processing and searches. The video from that Office Hours can be found [here](https://youtu.be/Np-08lWeIbc?list=PLVWqoBEzghqdpHYXcOESRPLJseA6cRT_q).
+While at the event, Jörg and I also appeared on DC/OS Office Hours to discuss our impressions of the conference. We noted a lot of talk about Artificial Intelligence and Machine Learning at Spark Summit East, especially in the keynotes. Big data keeps getting bigger, allowing companies to train algorithms to do jobs that, up until now, fell solidly in the human realm. Many talks also discussed live streaming data using Apache Spark, with mechanisms that integrate both archival and streaming data for processing and searches. The video from our Office Hours can be found [here](https://youtu.be/Np-08lWeIbc?list=PLVWqoBEzghqdpHYXcOESRPLJseA6cRT_q).
 
 I wrote more about the event on my personal blog, [here](http://princessleia.com/journal/2017/02/spark-summit-east-2017/).
 
-If you happen to be in Berlin, you can also learn about some of the event highlights in person from Jörg at the [upcoming Berlin Apache Spark Meetup](https://www.meetup.com/Berlin-Apache-Spark-Meetup/events/237849059/) on Thursday, March 9, 2017 at 7:00 PM.
+If you happen to be in Berlin, you can learn about some of the event highlights in person from Jörg at the [upcoming Berlin Apache Spark Meetup](https://www.meetup.com/Berlin-Apache-Spark-Meetup/events/237849059/) on Thursday, March 9, 2017 at 7:00 PM.
