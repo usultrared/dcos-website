@@ -93,8 +93,12 @@ Improved upgrade tooling and experience for on-premise installations. Upgrades n
 
 # Known Issues and Limitations
 
-- If you install DC/OS 1.9 by using the [GUI](/docs/1.9/administration/installing/custom/gui/) or [CLI](/docs/1.9/administration/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
-- This release candidate uses CentOS 7.3 as the default version.
-- This release candidate uses Docker 1.13 as the default version.
 - This release candidate has [task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
 - [4137](https://github.com/mesosphere/marathon/issues/4137) - Volumes do not persist.
+
+# Fixed Issues
+
+- DCOS-9738 - CLI-only packages show up as installable in the UI.
+- DCOS-14045 - Exhibitor requests hang/deadlock on a five master cluster.
+- DCOS-14201 - Minuteman module minuteman_lb_mgr crashes.
+- DCOS-14053 - Can't switch from Docker containerizer to Mesos containerizer.
