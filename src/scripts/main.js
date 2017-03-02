@@ -146,7 +146,7 @@ if(wallopEl){
 /****************
   Clickable headers
 ****************/
-$('#docs-content h2, #docs-content h3, #docs-content h4, #docs-content h5, #docs-content h6').each(function( index ) {
+$('#docs-content h1, #docs-content h2, #docs-content h3, #docs-content h4, #docs-content h5, #docs-content h6').each(function( index ) {
   var hashURL = $(this).attr('id')
   $(this).wrapInner('<a href="#' + hashURL + '" class="show-anchor"></a>')
 });
@@ -215,4 +215,23 @@ $('#docs-content img').each(function(index) {
   $(this).click(function(){
     window.open(imgUrl, '_blank');
   })
+})
+
+/****************
+  truncate excerpt
+****************/
+function cut(n) {
+  return function textCutter(i, text) {
+    var short = text.substr(0, n);
+    if (/^\S/.test(text.substr(n)))
+      return short.replace(/\s+\S*$/, '…');
+    return short;
+  };
+}
+
+$('.related-pages > div > p').each(function(index) {
+  var excerpt = $(this).text();
+  if(excerpt.length > 200) {
+    $(this).text(cut(200));
+  }
 })
