@@ -7,7 +7,7 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 ### Contents
 - [What's New](#whats-new)
 - [Known Issues and Limitations](#known-issues)
-- [Fixed Issues](#fixed-issues)
+- [Issues Fixed since 1.9.0-rc1](#fixed-issues)
 
 # <a name="whats-new">What's New
 
@@ -98,10 +98,11 @@ For more information, see the [documentation](/docs/1.9/administration/upgrading
 
 # <a name="known-issues">Known Issues and Limitations
 
+- Marathon-LB does not support pods.
 - This release candidate has [task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
 - [4137](https://github.com/mesosphere/marathon/issues/4137) - Volumes do not persist.
 
-# <a name="fixed-issues">Fixed Issues
+# <a name="fixed-issues">Issues Fixed since 1.9.0-rc1
 
 - DCOS-9738 - CLI-only packages show up as installable in the UI.
 - DCOS-14045 - Exhibitor requests hang/deadlock on a five master cluster.
