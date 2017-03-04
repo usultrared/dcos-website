@@ -8,7 +8,7 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 - [What's New](#whats-new)
 - [Known Issues and Limitations](#known-issues)
 
-# <a name="whats-new">What's New
+# <a name="whats-new"></a>What's New
 
 ### Apache Mesos 1.2 and Marathon 1.4 integrated
 
@@ -95,7 +95,7 @@ Improved upgrade tooling and experience for on-premise installations. Upgrades n
 
 For more information, see the [documentation](/docs/1.9/administration/upgrading/).
 
-# <a name="known-issues">Known Issues and Limitations
+# <a name="known-issues"></a>Known Issues and Limitations
 
 - Marathon-LB does not support pods.
 - If you install DC/OS 1.9 by using the [GUI](/docs/1.9/administration/installing/custom/gui/) or [CLI](/docs/1.9/administration/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.

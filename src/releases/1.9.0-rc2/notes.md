@@ -9,20 +9,20 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 - [Known Issues and Limitations](#known-issues)
 - [Issues Fixed since 1.9.0-rc1](#fixed-issues)
 
-# <a name="whats-new">What's New
+# <a name="whats-new"></a>What's New
 
 ### Apache Mesos 1.2 and Marathon 1.4 integrated
 
 - Apache Mesos 1.2 [CHANGELOG](https://github.com/apache/mesos/blob/1.2.x/CHANGELOG).
 - Marathon 1.4 [release notes](https://github.com/mesosphere/marathon/releases).
 
-## <a name="container-orchestration">Container Orchestration
+## <a name="container-orchestration"></a>Container Orchestration
 
 - Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/usage/pods/).
 - GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/usage/gpu/).
 - Significant scalability improvements.
 
-## <a name="monitoring-and-operations">DC/OS Monitoring and Operations
+## <a name="monitoring-and-operations"></a>DC/OS Monitoring and Operations
 
 ### Remote Process Injection for Debugging
 
@@ -66,12 +66,12 @@ For more information, see the [documentation](/docs/1.9/administration/metrics/)
 
   ![Improved GUI](/assets/images/releases/dcos-create.png)
 
-## <a name="networking-services">Networking Services
+## <a name="networking-services"></a>Networking Services
 
 - CNI support for 3rd party CNI plugins.
 - Performance improvements across all networking features.
 
-## <a name="other-improvements">Other Improvements
+## <a name="other-improvements"></a>Other Improvements
 
 ### DC/OS Internals
 
@@ -96,13 +96,13 @@ Improved upgrade tooling and experience for on-premise installations. Upgrades n
 
 For more information, see the [documentation](/docs/1.9/administration/upgrading/).
 
-# <a name="known-issues">Known Issues and Limitations
+# <a name="known-issues"></a>Known Issues and Limitations
 
 - Marathon-LB does not support pods.
 - This release candidate has [task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
 - [4137](https://github.com/mesosphere/marathon/issues/4137) - Volumes do not persist.
 
-# <a name="fixed-issues">Issues Fixed since 1.9.0-rc1
+# <a name="fixed-issues"></a>Issues Fixed since 1.9.0-rc1
 
 - DCOS-9738 - CLI-only packages show up as installable in the UI.
 - DCOS-14045 - Exhibitor requests hang/deadlock on a five master cluster.
