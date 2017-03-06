@@ -1,5 +1,5 @@
 [
-  { "title": "Meetup - Securing and Troubleshooting Containers", "image": "/assets/images/events/2017-04-10_San_Francisco.jpg", "date": "2017-02-02", "url": "https://www.meetup.com/Sysdig-San-Francisco/events/237044175/" },
+  { "title": "Meetup - Securing and Troubleshooting Containers", "image": "/assets/images/events/San_Francisco.jpg", "date": "2017-02-02", "url": "https://www.meetup.com/Sysdig-San-Francisco/events/237044175/" },
   { "title": "FOSDEM", "image": "/assets/images/events/Brussels.jpg", "date": "2017-02-04", "url": "https://fosdem.org/2017/" },
   { "title": "Meetup - Building Real-time Data Pipelines with Spark", "image": "/assets/images/events/Boston.jpg", "date": "2017-02-06", "url": "https://www.meetup.com/Boston-Mesos-User-Group/events/237320163/" },
   { "title": "Spark Summit East", "image": "/assets/images/events/Boston.jpg", "date": "2017-02-07", "url": "https://spark-summit.org/east-2017/" },
@@ -10,8 +10,12 @@
   { "title": "QCon London", "image": "/assets/images/events/London.jpg", "date": "2017-03-06", "url": "https://qconlondon.com/" },
   { "title": "Meetup - Berlin Apache Spark Meetup", "image": "/assets/images/events/Berlin.jpg", "date": "2017-03-09", "url": "https://www.meetup.com/Berlin-Apache-Spark-Meetup/events/237849059/" },
   { "title": "Strata + Hadoop World San Jose", "image": "/assets/images/events/San_Jose.jpg", "date": "2017-03-13", "url": "http://conferences.oreilly.com/strata/strata-ca" },
+  { "title": "Meetup - Graphs at scale - Scale out Neo4j using Apache Mesos and DC/OS", "image": "/assets/images/events/San_Francisco.jpg", "date": "2017-03-16", "url": "https://www.meetup.com/Neo4j-Online-Meetup/events/238023188/" },
+  { "title": "Meetup - Presenting the Instana Package for DC/OS", "image": "/assets/images/events/San_Francisco_2.jpg", "date": "2017-03-22", "url": "https://www.meetup.com/Bay-Area-Mesos-User-Group/events/238060698/" },
   { "title": "Javaland", "image": "/assets/images/events/Bruehl.jpg", "date": "2017-03-28", "url": "https://www.javaland.eu/en/home/" },
+  { "title": "Open Networking Summit", "image": "/assets/images/events/Santa_Clara.jpg", "date": "2017-04-03", "url": "http://events.linuxfoundation.org/events/open-networking-summit" },
   { "title": "Meetup - Super Fast Real-time Data Processing on Cloud-Native Architecture", "image": "/assets/images/events/Tel_Aviv.jpg", "date": "2017-04-04", "url": "https://www.meetup.com/IGTCloud/events/236958368/" },
-  { "title": "Flink Forward", "image": "/assets/images/events/2017-04-10_San_Francisco.jpg", "date": "2017-04-10", "url": "http://sf.flink-forward.org/" },
+  { "title": "Flink Forward", "image": "/assets/images/events/San_Francisco.jpg", "date": "2017-04-10", "url": "http://sf.flink-forward.org/" },
+  { "title": "DevPulseCon", "image": "/assets/images/events/Mountain_View.jpg", "date": "2017-04-20", "url": "http://devpulsecon.squarespace.com/" },
   { "title": "J on the Beach", "image": "/assets/images/events/Malaga.jpg", "date": "2017-05-17", "url": "http://jonthebeach.com/" }
 ]
