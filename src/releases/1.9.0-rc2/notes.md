@@ -83,12 +83,12 @@ For more information, see the [documentation](/docs/1.9/administration/metrics/)
 
 ### Expanded OS Support
 
-- CentOS [7.3](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.3_Release_Notes/index.html) is the default version. If you install DC/OS 1.9 by using the [GUI](/1.9/administration/installing/custom/gui/) or [CLI](/1.9/administration/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
+- CentOS [7.3](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.3_Release_Notes/index.html) is the default version. If you install DC/OS 1.9 by using the [GUI](/docs/1.9/administration/installing/custom/gui/) or [CLI](/docs/1.9/administration/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
 - CoreOS [1235.8.0](https://coreos.com/releases/#1235.8.0).
 
 ### Expanded Docker Engine Support
 
-- Docker 1.12 and 1.13 are now [supported](/1.9/administration/installing/custom/system-requirements/). Docker 1.13 is the default version.
+- Docker 1.12 and 1.13 are now [supported](/docs/1.9/administration/installing/custom/system-requirements/). Docker 1.13 is the default version.
 
 ### Upgrades
 
