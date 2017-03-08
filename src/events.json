@@ -14,6 +14,7 @@
   { "title": "Meetup - Graphs at scale - Scale out Neo4j using Apache Mesos and DC/OS", "image": "/assets/images/events/San_Francisco.jpg", "date": "2017-03-16", "url": "https://www.meetup.com/Neo4j-Online-Meetup/events/238023188/" },
   { "title": "Meetup - Presenting the Instana Package for DC/OS", "image": "/assets/images/events/San_Francisco_2.jpg", "date": "2017-03-22", "url": "https://www.meetup.com/Bay-Area-Mesos-User-Group/events/238060698/" },
   { "title": "Javaland", "image": "/assets/images/events/Bruehl.jpg", "date": "2017-03-28", "url": "https://www.javaland.eu/en/home/" },
+  { "title": "CloudNativeCon + KubeCon", "image": "/assets/images/events/Berlin.jpg", "date": "2017-03-29", "url": "http://events.linuxfoundation.org/events/cloudnativecon-and-kubecon-europe" },
   { "title": "Open Networking Summit", "image": "/assets/images/events/Santa_Clara.jpg", "date": "2017-04-03", "url": "http://events.linuxfoundation.org/events/open-networking-summit" },
   { "title": "Meetup - Super Fast Real-time Data Processing on Cloud-Native Architecture", "image": "/assets/images/events/Tel_Aviv.jpg", "date": "2017-04-04", "url": "https://www.meetup.com/IGTCloud/events/236958368/" },
   { "title": "Flink Forward", "image": "/assets/images/events/San_Francisco.jpg", "date": "2017-04-10", "url": "http://sf.flink-forward.org/" },
