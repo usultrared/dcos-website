@@ -24,8 +24,8 @@ window.compareVersions = compareVersions;
 const docPathName = window.location.pathname
 
 // Mobile menu
-$('#nav-icon').on('click', function (e) {
-  e.preventDefault();
+$('#nav-icon').on('click', function (event) {
+  event.preventDefault();
   if($('#nav-icon').hasClass('open')) {
     $('.navigation').removeClass('mobile-menu--open');
     $('.menu-mobile').removeClass('open');
@@ -68,8 +68,8 @@ if (!Array.prototype.find) {
 /***********************
   Dropdown
 ***********************/
-$('.dropdown').click(function(){
-  $('html').one('click',function() {
+$('.dropdown').click(function(event){
+  $('html').on('click',function() {
     $('.dropdown').removeClass('is-active')
   });
 

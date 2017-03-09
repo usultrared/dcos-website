@@ -216,7 +216,7 @@ html
                 a(href='/docs/#{docsVersion}/rss.xml').cta.cta--button.rss-button
                   span.rss-icon
 
-            button.dropdown.z-500.relative.mb2.left-align(style='width: calc(100% - 30px);')
+            div.dropdown.z-500.relative.mb2.left-align(style='width: calc(100% - 30px);')
                 a.btn.mb0.block DC/OS #{(docsVersion === currentDevVersion ? `${docsVersion} Early Access` : docsVersion)}
                 ul
                   each version in docsVersionsReversed
