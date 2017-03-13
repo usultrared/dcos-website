@@ -41,19 +41,22 @@ block content
 
         .flex.flex-auto.flex-wrap
           .lg-col-4.col-6.xs-col-12.xs-center.px2.pb3
-            img(src='/assets/images/icons/monitoring.svg')
-            h4 #[a.text-black(href='#monitoring') Monitoring]
+            div(style='width: 42px; height: 42px;')
+              img.align-center(src='/assets/images/icons/monitoring.svg')
+            h4 Monitoring
             p DC/OS makes it simple for operators to track host, service, and container level metrics, allowing them to head off potential problems and avoid downtime.
 
           .lg-col-4.col-6.xs-col-12.xs-center.px2.pb3
-            img(src='/assets/images/icons/maintenance.svg')
-            h4 #[a.text-black(href='#maintenance') Maintenance]
-            p Microservices allow developers to improve apps faster than ever, and DC/OS helps operators keep pace.
+            div(style='width: 42px; height: 42px;')
+              img.align-center(src='/assets/images/icons/maintenance.svg')
+            h4 Maintenance
+            p Microservices allow developers to improve apps faster than ever, and DC/OS helps operators keep pace. Spend less time on triage, and focus on deploying changes to production.
 
           .lg-col-4.col-6.xs-col-12.xs-center.px2.pb0
-            img(src='/assets/images/icons/troubleshooting.svg')
-            h4 #[a.text-black(href='#troubleshooting') Troubleshooting]
-            p DC/OS allows operators deploy and troubleshoot containers while remaining blissfully agnostic to their locations within a cluster.
+            div(style='width: 42px; height: 42px;')
+              img.align-center(src='/assets/images/icons/troubleshooting.svg')
+            h4 Troubleshooting
+            p DC/OS allows operators to deploy containers to a pool of resources. Now operators can debug those containers while remaining blissfully agnostic to their location.
 
 
 
@@ -73,8 +76,7 @@ block content
             p.pb5 DC/OS makes cluster maintenance easy. It provides resilience by #[a(href='https://dcos.io/docs/latest/overview/high-availability/#fast-failure-detection') detecting node failures] and enabling #[a(href='https://dcos.io/docs/latest/overview/high-availability/#fast-failover') automatic recovery]. By providing a layer of abstraction between your hardware and services, DC/OS makes it easy to plan for and react to the routine failures that are part of operating in a data center. DC/OS enables #[a(href='https://dcos.io/blog/2016/zero-downtime-deployments-lab/index.html') zero downtime upgrade] patterns including rolling, blue-green, or canary deployments.
 
             h3#troubleshooting Troubleshooting
-            p DC/OS allows users to run containers on pooled resources, without specifying which specific node those containers should run on. Starting with DC/OS 1.9, users can also #[a(href='https://dcos.io/docs/1.9/administration/debugging/quickstart/') troubleshoot] short tasks or long-running jobs without having to track down the container or node where the task or job is running. DC/OS gives users access to misbehaving tasks and jobs inside containers launched with the #[a('https://dcos.io/docs/1.9/usage/containerizers/') Universal container runtime], without requiring SSH.
-
+            p DC/OS allows users to run containers on pooled resources, without specifying which specific node those containers should run on. Starting with DC/OS 1.9, users can also #[a(href='https://dcos.io/docs/1.9/administration/debugging/quickstart/') troubleshoot] short tasks or long-running jobs without having to track down the container or node where the task or job is running. DC/OS gives users access to misbehaving tasks and jobs inside containers launched with the #[a(href='https://dcos.io/docs/1.9/usage/containerizers/') Universal container runtime], without requiring SSH.
 
 
 
@@ -108,10 +110,6 @@ block content
       .max-width-4.mx-auto.pb4
         .mxn2.flex.flex-auto.flex-wrap
           h3.col-12.mx2 Get Started
-          a.card.col-4.left-align.px3.py3(style='display: block' href='https://docs.google.com/presentation/d/1e7RlXyyhlCOavw39hNXkM80cQEi-4NB3ZjhHdnH7L1Q')
-            h4.my0 Day 2 Operations 201 Deck
-            p t.b.d.
-            span(style='color: #9351E5') t.b.d.
 
           a.card.col-4.left-align.px3.py3(style='display: block' href='http://some.ops4devs.info/')
             h4.my0 Ops for Devs
@@ -127,24 +125,6 @@ block content
             h4.my0 Delivering ‘Day 2’ operations with DC/OS (Pt. 2: Metrics)
             p Learn how metrics are collected, tagged, and forwarded in DC/OS 1.9
             span(style='color: #9351E5') Read the blog post
-
-      .max-width-4.mx-auto.pb4
-        .mxn2.flex.flex-auto.flex-wrap
-          h3.col-12.mx2 Deep Dive
-          a.card.col-4.left-align.px3.py3(style='display: block' href='#')
-            h4.my0 Day 2 Operations 301 Deck(s)
-            p t.b.d.
-            span(style='color: #9351E5') t.b.d.
-
-          a.card.col-4.left-align.px3.py3(style='display: block' href='#')
-            h4.my0 Operations Guide
-            p t.b.d.
-            span(style='color: #9351E5') t.b.d.
-
-          a.card.col-4.left-align.px3.py3(style='display: block' href='#')
-            h4.my0 Packaging Storage blog post
-            p t.b.d.
-            span(style='color: #9351E5') t.b.d.
 
 
   //- Footer
