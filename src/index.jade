@@ -26,6 +26,19 @@ block content
     //- Wallop slider
     .Wallop.Wallop--fade.px0(style='min-height: 532px;')
       .Wallop-list.mx-auto.left-align
+        .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py5.py2.px2(style='background-image: url(/assets/images/hero-bg-tiles.svg); background-size: cover; background-position: calc(50% - 10px) calc(50% + 65px); min-height: 545px;')
+          .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
+            .sm-col-6.col-12.xs-center
+              h1.hero-title
+                span Day 2 Operations:
+                br
+                span.typer2
+                span &nbsp;it
+
+              a(href='/day2ops').btn.btn-primary.block.sm-inline-block Learn More
+            .sm-col-6.col-12.xs-center
+              +image('/assets/images/day2ops.png')
+
         .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py5.py2.px2(style='background-image: url(/assets/images/illustrations/fast-data-header.svg); background-size: 1920px 720px; background-position: calc(50% - 10px) calc(50% + 65px); min-height: 545px;')
           .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
             .sm-col-6.col-12.xs-center
@@ -38,19 +51,6 @@ block content
               a(href='/fast-data').btn.btn-primary.block.sm-inline-block Learn More
             .sm-col-6.col-12.lg-hide
               +image('/assets/images/fast-data.png')
-
-        .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py5.py2.px2(style='background-image: url(/assets/images/hero-bg-tiles.svg); background-size: cover; background-position: calc(50% - 10px) calc(50% + 65px); min-height: 545px;')
-          .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
-            .sm-col-6.col-12.xs-center
-              +image('/assets/images/day2ops.png')
-            .sm-col-6.col-12.xs-center.pl3
-              h1.hero-title
-                span Day 2 Operations:
-                br
-                span.typer2
-                span &nbsp;it
-
-              a(href='/day2ops').btn.btn-primary.block.sm-inline-block Learn More
 
         .Wallop-item.flex.flex-wrap.flex-auto.md-py5.py2.px2(style='min-height: 545px;')
           .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
