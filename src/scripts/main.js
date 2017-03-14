@@ -12,6 +12,7 @@ require('./quotes-carousel.js')
 require('./smooth-scroll.js')
 require('./stackdiagram.js')
 require('./typer.js')
+require('./typer2.js')
 require('swagger-ui-browserify')
 
 import Wallop from 'wallop';
