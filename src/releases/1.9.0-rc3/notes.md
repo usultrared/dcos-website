@@ -7,7 +7,7 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 ### Contents
 - [What's New](#whats-new)
 - [Known Issues and Limitations](#known-issues)
-- [Issues Fixed since 1.9.0-rc1](#fixed-issues)
+- [Fixed Issues](#fixed-issues)
 
 # <a name="whats-new"></a>What's New
 
@@ -104,4 +104,4 @@ For more information, see the [documentation](/docs/1.9/administration/upgrading
 - The [Universal container runtime](/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
 - DNS becomes unavailable during DC/OS version upgrades.
 
-# <a name="fixed-issues"></a>Issues Fixed since 1.9.0-rc2
+# <a name="fixed-issues"></a>Issues Fixed Since 1.9.0-rc2
