@@ -24,10 +24,10 @@ block content
 
 
     //- Wallop slider
-    .Wallop.Wallop--fade.px0(style='min-height: 532px;')
+    .Wallop.Wallop--fade.px0(style='min-height: 532px; margin-top: -78px;')
       .Wallop-list.mx-auto.left-align
-        .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py4.py2.px2(style='background-image: url(/assets/images/hero-bg-tiles.svg); background-size: cover; background-position: calc(50% - 10px) calc(50% + 65px); min-height: 547px;')
-          .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
+        .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py4.py2.px2(style='background-image: url(/assets/images/hero-bg-tiles.svg); background-size: cover; background-position: calc(50% - 10px) calc(50% + 65px); min-height: calc(547px + 78px);')
+          .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center.border-box(style='margin-top: 78px;')
             .sm-col-5.col-12.xs-center
               h1.hero-title
                 span Day 2 Operations:
@@ -39,8 +39,8 @@ block content
             .sm-col-7.col-12.xs-center.right-align
               +image('/assets/images/day2ops-illustration.png')
 
-        .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py5.py2.px2(style='background-image: url(/assets/images/illustrations/fast-data-header.svg); background-size: 1920px 720px; background-position: calc(50% - 10px) calc(50% + 65px); min-height: 547px;')
-          .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
+        .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py5.py2.px2(style='background-image: url(/assets/images/illustrations/fast-data-header.svg); background-size: 1920px 720px; background-position: calc(50% - 10px) calc(50% + 65px); min-height: calc(547px + 78px);')
+          .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center.border-box(style='margin-top: 78px;')
             .sm-col-6.col-12.xs-center
               h1.hero-title
                 span Deploy your fast
@@ -52,8 +52,8 @@ block content
             .sm-col-6.col-12.lg-hide
               +image('/assets/images/fast-data.png')
 
-        .Wallop-item.flex.flex-wrap.flex-auto.md-py5.py2.px2(style='min-height: 547px;')
-          .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
+        .Wallop-item.flex.flex-wrap.flex-auto.md-py5.py2.px2(style='min-height: calc(547px + 78px);')
+          .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center.border-box(style='margin-top: 78px;')
             .sm-col-6.col-12.xs-center
               h1.hero-title
                 span The easiest way to
