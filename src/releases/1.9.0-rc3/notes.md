@@ -7,7 +7,7 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 ### Contents
 - [What's New](#whats-new)
 - [Known Issues and Limitations](#known-issues)
-- [Fixed Issues](#fixed-issues)
+<!-- - [Fixed Issues](#fixed-issues) -->
 
 # <a name="whats-new"></a>What's New
 
@@ -84,7 +84,7 @@ For more information, see the [documentation](/docs/1.9/administration/metrics/)
 ### Expanded OS Support
 
 - CentOS [7.3](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.3_Release_Notes/index.html) is the default version. If you install DC/OS 1.9 by using the [GUI](/docs/1.9/administration/installing/custom/gui/) or [CLI](/docs/1.9/administration/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
-- CoreOS [1235.8.0](https://coreos.com/releases/#1235.8.0).
+- CoreOS [1235.12.0](https://coreos.com/releases/#1235.12.0).
 
 ### Expanded Docker Engine Support
 
@@ -100,8 +100,8 @@ For more information, see the [documentation](/docs/1.9/administration/upgrading
 
 - Marathon-LB does not support pods.
 - This release candidate has [task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
-- [4137](https://github.com/mesosphere/marathon/issues/4137) - Volumes do not persist.
+- [MARATHON-1713](https://jira.mesosphere.com/browse/MARATHON-1713) - Volumes do not persist.
 - The [Universal container runtime](/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
-- DNS becomes unavailable during DC/OS version upgrades.
+- DNS becomes briefly unavailable during DC/OS version upgrades.
 
-# <a name="fixed-issues"></a>Issues Fixed Since 1.9.0-rc2
+<!-- # <a name="fixed-issues"></a>Issues Fixed Since 1.9.0-rc2 -->
