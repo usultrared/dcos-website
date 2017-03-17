@@ -50,7 +50,7 @@ Because pods are configured with JSON pod definitions, you can also use the JSON
 
 Once a pod is up and running, you can view its status in the DC/OS GUI just like any other service. By clicking on your pod in the list of services, you will be taken to the pod detail page where you can view the pod instances and the container within each pod instance, along with their status.
 
-<img src="/assets/images/blog/2017-03-17_pods_gui_1.jpg" alt="Services screenshot" />
+<img src="/assets/images/blog/2017-03-17_pods_gui_2.jpg" alt="Services screenshot" />
 
 Both the DC/OS CLI and REST API also support pods. If you were using the [pod with multiple containers](https://dcos.io/docs/1.9/usage/pods/examples/#a-pod-with-multiple-containers) example, shown in the screenshot above, you would create a pod using the CLI by entering:
 
