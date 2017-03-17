@@ -48,7 +48,7 @@ For more information, see the [documentation](/docs/1.9/administration/logging/)
 - StatsD endpoint in every container for forwarding metrics to the DC/OS metrics service. This service is what exposes the HTTP API.
 - Any metric sent to STATSD_UDP_HOST/PORT is available in the HTTP API `/container/<container_id>/app` endpoint.
 
-For more information, see the [documentation](/docs/1.9/administration/metrics/).
+For more information, see the [documentation](/docs/1.9/administration/monitoring/metrics/).
 
 ### Tool for Troubleshooting Service Deployment Failures
 
