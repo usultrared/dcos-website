@@ -15,8 +15,7 @@ The ability to allocate resources to multiple containers at once isn't the only 
 
 With the release of DC/OS 1.9 we are happy to announce that pods are available to DC/OS users. Here's how they work!
 
-DC/OS Pods: What are they good for?
-===================================
+# DC/OS Pods: What are they good for?
 
 By default, when you launch a container with a job or service in it, DC/OS puts the container on any node that has the resources that you request, allowing you to remain agnostic to the physical location of containers in your cluster. Historically, you could only influence container placement with [constraints](https://mesosphere.github.io/marathon/docs/constraints.html) and resources, which specify particular node hostnames, nodes attributes, and node resources for your containers. You couldn't guarantee that any two containers would be scheduled on the same node without specifying exactly which node, until now.
 
@@ -26,8 +25,7 @@ Pods can be particularly valuable if your application depends on support service
 
 In a recent blog post, Amr Abdelrazik provided a more comprehensive overview of the use cases for pods, which you can read at [Introducing Pods in DC/OS 1.9](https://mesosphere.com/blog/2017/03/15/introducing-pods-dcos-1-9/).
 
-Pod Internals
-=============
+# Pod Internals
 
 To run a pod using Mesos and Marathon, you first have to define it. Pods are configured for Marathon using JSON pod definitions, which look similar to Marathon [application definitions](https://dcos.io/docs/1.9/usage/managing-services/application-basics/), except that they can list multiple containers, referred to as sub-containers, which define the tasks you will want to run together.
 
@@ -39,8 +37,7 @@ Once an offer is accepted, the Mesos master tells the appropriate Mesos agent to
 
 To learn more about pods in Marathon, check out the [documentation](http://mesosphere.github.io/marathon/docs/pods.html).
 
-Using Pods in DC/OS 1.9
-=======================
+# Using Pods in DC/OS 1.9
 
 In the DC/OS GUI, pods are handled and visually represented as types of [Services](https://dcos.io/docs/1.9/overview/concepts/#dcos-service), along with apps. As such, you can deploy or create a pod by running a new Service in the DC/OS GUI and selecting the Multi-container (Pod) option.
 
@@ -72,8 +69,8 @@ dcos marathon pod update [--force] <pod-id>
 ```
 See [Using Pods](https://dcos.io/docs/1.9/usage/pods/using-pods/) for specific usage of each of these commands.
 
-Conclusion
-==========
+# Conclusion
+
 
 Pods is considered experimental in DC/OS release 1.9.0, and is exclusively supported by the [Universal Container Runtime](https://dcos.io/docs/1.9/usage/containerizers/#dc-os-universal-container-runtime). Pod features currently on the roadmap for future releases include: ordered container start times within a Pod, and Bridge Mode networking support.
 
