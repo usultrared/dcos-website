@@ -44,13 +44,13 @@ Using Pods in DC/OS 1.9
 
 In the DC/OS GUI, pods are handled and visually represented as types of [Services](https://dcos.io/docs/1.9/overview/concepts/#dcos-service), along with apps. As such, you can deploy or create a pod by running a new Service in the DC/OS GUI and selecting the Multi-container (Pod).
 
-<img src="/assets/images/blog/2017-03-17_pods_gui_1.jpg" alt="Run a Service screenshot" />
+<a href="/assets/images/blog/2017-03-17_pods_gui_1.jpg" /><img src="/assets/images/blog/2017-03-17_pods_gui_1.jpg" alt="Run a Service screenshot" border="0" /></a>
 
 Because pods are configured with JSON pod definitions, you can also use the JSON Configuration option on the Run a Service page to configure a pod, just like you would for an app. The new pods [Quick Start](https://dcos.io/docs/1.9/usage/pods/quickstart/) for DC/OS 1.9 provides a simple example of a pod definition, and you can view more pod definitions in the [Examples](https://dcos.io/docs/1.9/usage/pods/examples/).
 
 Once a pod is up and running, you can view its status in the DC/OS GUI just like any other service. By clicking on your pod in the list of services, you will be taken to the pod detail page where you can view the pod instances and the container within each pod instance, along with their status.
 
-<img src="/assets/images/blog/2017-03-17_pods_gui_2.jpg" alt="Services screenshot" />
+<a href="/assets/images/blog/2017-03-17_pods_gui_2.jpg" /><img src="/assets/images/blog/2017-03-17_pods_gui_2.jpg" alt="Services screenshot" border="0"/></a>
 
 Both the DC/OS CLI and REST API also support pods. If you were using the [pod with multiple containers](https://dcos.io/docs/1.9/usage/pods/examples/#a-pod-with-multiple-containers) example, shown in the screenshot above, you would create a pod using the CLI by entering:
 
