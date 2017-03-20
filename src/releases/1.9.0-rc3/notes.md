@@ -98,10 +98,13 @@ For more information, see the [documentation](/docs/1.9/administration/upgrading
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
-- Marathon-LB does not support pods.
-- This release candidate has [task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
-- [MARATHON-1713](https://jira.mesosphere.com/browse/MARATHON-1713) - Volumes do not persist.
-- The [Universal container runtime](/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
-- DNS becomes briefly unavailable during DC/OS version upgrades.
+- DCOS_OSS-691 - DNS becomes briefly unavailable during DC/OS version upgrades.
+- DCOS-14005 - Marathon-LB does not support pods.
+- DCOS-14021 - [Task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
+- DCOS-14047 - Marathon is killed during upgrades.
+- DCOS-14433 - The [Universal container runtime](/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
+- DCOS-OSS-743 - If you are using Docker 1.13 on CentOS 7.3, the custom CLI installation method fails while installing prerequisites (`--install-prereqs`).
+- MARATHON-1713 - Volumes do not persist.
+- Marathon-7133 - Marathon application history is lost after Marathon restart.
 
 <!-- # <a name="fixed-issues"></a>Issues Fixed Since 1.9.0-rc2 -->
