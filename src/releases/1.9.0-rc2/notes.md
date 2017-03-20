@@ -7,7 +7,7 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 ### Contents
 - [What's New](#whats-new)
 - [Known Issues and Limitations](#known-issues)
-- [Issues Fixed since 1.9.0-rc1](#fixed-issues)
+- [Fixed Issues](#fixed-issues)
 
 # <a name="whats-new"></a>What's New
 
@@ -48,7 +48,7 @@ For more information, see the [documentation](/docs/1.9/administration/logging/)
 - StatsD endpoint in every container for forwarding metrics to the DC/OS metrics service. This service is what exposes the HTTP API.
 - Any metric sent to STATSD_UDP_HOST/PORT is available in the HTTP API `/container/<container_id>/app` endpoint.
 
-For more information, see the [documentation](/docs/1.9/administration/metrics/).
+For more information, see the [documentation](/docs/1.9/administration/monitoring/metrics/).
 
 ### Tool for Troubleshooting Service Deployment Failures
 
@@ -102,7 +102,7 @@ For more information, see the [documentation](/docs/1.9/administration/upgrading
 - This release candidate has [task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
 - [4137](https://github.com/mesosphere/marathon/issues/4137) - Volumes do not persist.
 
-# <a name="fixed-issues"></a>Issues Fixed since 1.9.0-rc1
+# <a name="fixed-issues"></a>Issues Fixed Since 1.9.0-rc1
 
 - DCOS-9738 - CLI-only packages show up as installable in the UI.
 - DCOS-14045 - Exhibitor requests hang/deadlock on a five master cluster.

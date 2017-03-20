@@ -7,6 +7,7 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 ### Contents
 - [What's New](#whats-new)
 - [Known Issues and Limitations](#known-issues)
+<!-- - [Fixed Issues](#fixed-issues) -->
 
 # <a name="whats-new"></a>What's New
 
@@ -15,13 +16,13 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 - Apache Mesos 1.2 [CHANGELOG](https://github.com/apache/mesos/blob/1.2.x/CHANGELOG).
 - Marathon 1.4 [release notes](https://github.com/mesosphere/marathon/releases).
 
-## Container Orchestration
+## <a name="container-orchestration"></a>Container Orchestration
 
 - Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/usage/pods/).
 - GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/usage/gpu/).
 - Significant scalability improvements.
 
-## DC/OS Monitoring and Operations
+## <a name="monitoring-and-operations"></a>DC/OS Monitoring and Operations
 
 ### Remote Process Injection for Debugging
 
@@ -65,12 +66,12 @@ For more information, see the [documentation](/docs/1.9/administration/monitorin
 
   ![Improved GUI](/assets/images/releases/dcos-create.png)
 
-## Networking Services
+## <a name="networking-services"></a>Networking Services
 
 - CNI support for 3rd party CNI plugins.
 - Performance improvements across all networking features.
 
-## Other Improvements
+## <a name="other-improvements"></a>Other Improvements
 
 ### DC/OS Internals
 
@@ -82,12 +83,12 @@ For more information, see the [documentation](/docs/1.9/administration/monitorin
 
 ### Expanded OS Support
 
-- CentOS [7.3](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.3_Release_Notes/index.html).
-- CoreOS [1235.8.0](https://coreos.com/releases/#1235.8.0).
+- CentOS [7.3](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.3_Release_Notes/index.html) is the default version. If you install DC/OS 1.9 by using the [GUI](/docs/1.9/administration/installing/custom/gui/) or [CLI](/docs/1.9/administration/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
+- CoreOS [1235.12.0](https://coreos.com/releases/#1235.12.0).
 
 ### Expanded Docker Engine Support
 
-- Docker 1.12 and 1.13 are now [supported](/docs/1.9/administration/installing/custom/system-requirements/).
+- Docker 1.12 and 1.13 are now [supported](/docs/1.9/administration/installing/custom/system-requirements/). Docker 1.13 is the default version.
 
 ### Upgrades
 
@@ -97,9 +98,13 @@ For more information, see the [documentation](/docs/1.9/administration/upgrading
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
-- Marathon-LB does not support pods.
-- If you install DC/OS 1.9 by using the [GUI](/docs/1.9/administration/installing/custom/gui/) or [CLI](/docs/1.9/administration/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
-- The next 1.9 release candidate will use CentOS 7.3 as the default version.
-- The next 1.9 release candidate will use Docker 1.13 as the default version.
-- The next 1.9 release candidate will have the [logging features](/docs/1.9/administration/logging/) disabled by default.
-- [4137](https://github.com/mesosphere/marathon/issues/4137) - Volumes do not persist.
+- DCOS_OSS-691 - DNS becomes briefly unavailable during DC/OS version upgrades.
+- DCOS-14005 - Marathon-LB does not support pods.
+- DCOS-14021 - [Task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
+- DCOS-14047 - Marathon is killed during upgrades.
+- DCOS-14433 - The [Universal container runtime](/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
+- DCOS-OSS-743 - If you are using Docker 1.13 on CentOS 7.3, the custom CLI installation method fails while installing prerequisites (`--install-prereqs`).
+- MARATHON-1713 - Volumes do not persist.
+- Marathon-7133 - Marathon application history is lost after Marathon restart.
+
+<!-- # <a name="fixed-issues"></a>Issues Fixed Since 1.9.0-rc2 -->
