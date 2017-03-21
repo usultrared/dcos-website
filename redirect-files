@@ -93,3 +93,5 @@
 /docs/1.9/administration/metrics/quickstart.html /docs/1.9/administration/monitoring/metrics/quickstart/
 /docs/1.9/administration/metrics/metrics-api.html /docs/1.9/administration/monitoring/metrics/metrics-api/
 /docs/1.9/administration/monitoring/nagios.html /docs/1.9/administration/monitoring/performance-monitoring/nagios/
+/docs/1.8/administration/haproxy-adminrouter.html /docs/1.8/administration/tls-ssl/haproxy-adminrouter/
+/docs/1.9/administration/haproxy-adminrouter.html /docs/1.9/administration/tls-ssl/haproxy-adminrouter/
