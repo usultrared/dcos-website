@@ -2,7 +2,7 @@
 title: Exploring Pods in DC/OS 1.9
 date: 2017-03-17
 author: Elizabeth K. Joseph and Karl Isenberg, Mesosphere
-category: community
+category: engineering, product
 description: Elizabeth K. Joseph and Karl Isenberg explain the inner working of pods in DC/OS 1.9, and provide an example of how to use them. Give them a try!
 layout: article.jade
 collection: posts
