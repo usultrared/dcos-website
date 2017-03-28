@@ -232,7 +232,7 @@ The "current" version of DC/OS that corresponds to `/docs/latest/` is managed in
 
 ## Versioning
 
-- To create a new version picker dropdown item, modify `layouts/docs.jade`.
+- To create a new version picker dropdown item, modify `layouts/docs.jade` and `gulpfile.js`.
 
 -  When a new version GAs, modify the `redirect-prefixes` file. For example, this denotes that 1.8 is the default version:
 
