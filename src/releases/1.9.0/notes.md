@@ -16,11 +16,18 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 - Apache Mesos 1.2 [CHANGELOG](https://github.com/apache/mesos/blob/1.2.x/CHANGELOG).
 - Marathon 1.4 [release notes](https://github.com/mesosphere/marathon/releases).
 
-## <a name="container-orchestration"></a>Container Orchestration
+## Container Orchestration
+Added support for pods, GPUs, and made significant scalability improvements.
 
-- Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/usage/pods/).
-- GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/usage/gpu/).
-- Significant scalability improvements.
+#### Pods [maturity-badge status='preview']
+Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/usage/pods/).
+
+#### GPU [maturity-badge status='preview']
+- Leverage GPUs to run novel algorithms.
+- Because DC/OS GPU support is compatible with nvidia-docker, you can test locally with nvidia-docker and then deploy to production with DC/OS.
+- Allocate GPUs on a per container basis, including isolation guarantees
+
+For more information, see the [documentation](/docs/1.9/usage/gpu/).
 
 ## <a name="monitoring-and-operations"></a>DC/OS Monitoring and Operations
 
@@ -101,7 +108,7 @@ For more information, see the [documentation](/docs/1.9/administration/upgrading
 - DCOS_OSS-691 - DNS becomes briefly unavailable during DC/OS version upgrades.
 - DCOS-14005 - Marathon-LB does not support pods.
 - DCOS-14021 - [Task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
-- DCOS-14433 - The [Universal container runtime](/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
+- DCOS-14433 - The [Universal container runtime](/docs/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
 
 # <a name="fixed-issues"></a>Issues Fixed since 1.8
