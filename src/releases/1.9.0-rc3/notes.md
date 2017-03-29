@@ -31,7 +31,7 @@ The new `dcos task exec` command allows you to remotely execute a process inside
 - Attach to a remote pseudoterminal (aka PTY) inside a container via the optional `--tty` flag.
 - Combine the `--interactive` and `--tty` flags to launch an interactive bash session or to run `top` and see the resource usage of your container in real time.
 
-For more information, see the documentation for the `dcos task exec` command [here](/docs/1.9/administration/debugging/).
+For more information, see the documentation for the debugging [documentation](/docs/1.9/usage/debugging/).
 
 ### Logging
 
@@ -102,7 +102,7 @@ For more information, see the [documentation](/docs/1.9/administration/upgrading
 - DCOS-14005 - Marathon-LB does not support pods.
 - DCOS-14021 - [Task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
 - DCOS-14047 - Marathon is killed during upgrades.
-- DCOS-14433 - The [Universal container runtime](/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
+- DCOS-14433 - The [Universal container runtime](/docs/1.9/usage/containerizers/) does not support Azure cloud with Ubuntu.
 - DCOS-OSS-743 - If you are using Docker 1.13 on CentOS 7.3, the custom CLI installation method fails while installing prerequisites (`--install-prereqs`).
 - MARATHON-1713 - Volumes do not persist.
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
