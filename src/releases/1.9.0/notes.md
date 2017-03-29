@@ -19,10 +19,10 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 ## Container Orchestration
 Added support for pods, GPUs, and made significant scalability improvements.
 
-#### Pods [maturity-badge status='preview']
+#### Pods 
 Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/usage/pods/).
 
-#### GPU [maturity-badge status='preview']
+#### GPU
 - Leverage GPUs to run novel algorithms.
 - Because DC/OS GPU support is compatible with nvidia-docker, you can test locally with nvidia-docker and then deploy to production with DC/OS.
 - Allocate GPUs on a per container basis, including isolation guarantees
