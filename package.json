@@ -9,6 +9,7 @@
     "build": "NODE_ENV=production gulp build",
     "clean": "rm -r ./build",
     "eslint": "eslint",
+    "preinstall": "./scripts/preinstall.sh",
     "dev": "NODE_ENV=production gulp serve",
     "dev:site": "NODE_ENV=production gulp serve-site",
     "dev:docs": "NODE_ENV=production gulp serve-docs"
