@@ -41,7 +41,7 @@ const excerpts = require('metalsmith-excerpts')
 //
 
 const docsVersions = ['1.7', '1.8', '1.9']
-const currentDevVersion = '1.9'
+const currentDevVersion = '1.10'
 
 const cssTimestamp = new Date().getTime()
 const paths = {
