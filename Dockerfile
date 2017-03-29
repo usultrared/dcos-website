@@ -1,4 +1,6 @@
-FROM nginx:stable
+FROM nginx:stable-alpine
+
+RUN apk --no-cache add bash ca-certificates
 
 # delete default nginx html
 RUN rm -rf /usr/share/nginx/html/*
