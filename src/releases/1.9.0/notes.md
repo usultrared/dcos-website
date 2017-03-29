@@ -19,7 +19,7 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 ## Container Orchestration
 Added support for pods, GPUs, and made significant scalability improvements.
 
-#### Pods 
+#### Pods
 Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/usage/pods/).
 
 #### GPU
@@ -38,7 +38,7 @@ The new `dcos task exec` command allows you to remotely execute a process inside
 - Attach to a remote pseudoterminal (aka PTY) inside a container via the optional `--tty` flag.
 - Combine the `--interactive` and `--tty` flags to launch an interactive bash session or to run `top` and see the resource usage of your container in real time.
 
-For more information, see the documentation for the `dcos task exec` command [here](/docs/1.9/administration/debugging/).
+For more information, see the documentation for the debugging [documentation](/docs/1.9/usage/debugging/).
 
 ### Logging
 
