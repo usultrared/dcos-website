@@ -112,17 +112,18 @@ mixin navItem(child)
         if (child.path !== ancestryChild.path) {
           children.push({
             menu_order: ancestryChild.menu_order,
-            title: child.nav_title || ancestryChild.title,
+            title: ancestryChild.nav_title || ancestryChild.title,
             link: `/docs/${docsVersion}/${processDescendantsPath(ancestryChild.path)}`
           })
         }
       })
-      child.ancestry.siblings && child.ancestry.siblings.forEach(sibling => {
-        if (child.path !== sibling.path) {
+
+      child.ancestry.members && child.ancestry.members.forEach(member => {
+        if (child.path !== member.path) {
           children.push({
-            menu_order: sibling.menu_order,
-            title: sibling.nav_title || sibling.title,
-            link: `/docs/${docsVersion}/${processDescendantsPath(sibling.path)}`
+            menu_order: member.menu_order,
+            title: member.nav_title || member.title,
+            link: `/docs/${docsVersion}/${processDescendantsPath(member.path)}`
           })
         }
       })
@@ -143,14 +144,15 @@ mixin navItem(child)
         })
       }
     })
-    locals.ancestry.siblings && locals.ancestry.siblings.forEach(sibling => {
-      if (locals.ancestry.self.path !== sibling.path) {
+
+    locals.ancestry.members && locals.ancestry.members.forEach(member => {
+      if (locals.ancestry.self.path !== member.path) {
         relatedPages.push({
-          menu_order: sibling.menu_order,
-          title: sibling.nav_title || sibling.title,
-          excerpt: sibling.excerpt,
-          link: `/docs/${docsVersion}/${processDescendantsPath(sibling.path)}`,
-          children: getChildrenFromAncestors(sibling)
+          menu_order: member.menu_order,
+          title: member.nav_title || member.title,
+          excerpt: member.excerpt,
+          link: `/docs/${docsVersion}/${processDescendantsPath(member.path)}`,
+          children: getChildrenFromAncestors(member)
         })
       }
     })
@@ -247,7 +249,7 @@ html
             hr.mt3(style='width: 100%;')
 
             if relatedPages.length
-              .flex.flex-wrap.flex-auto.mxn2.mt3.related-pages.hide
+              .flex.flex-wrap.flex-auto.mxn2.mt3
                 each p in relatedPages
                   if p.title && p.link
                     .col-12.md-col-6.px2.mb3.border-box
@@ -255,11 +257,15 @@ html
                         a(href='#{p.link}' title='#{p.title}')
                           != p.title
                       p.!= p.excerpt
-                      ul.list-reset
-                        each c in p.children
+                      ul.list-reset(style='list-style: none; margin-left: 0;')
+                        each c, index in p.children
+                          if index < 5
+                            li
+                              a(href='#{c.link}')
+                                != c.title
+                        if p.children.length > 4
                           li
-                            a(href='#{c.link}')
-                              != c.title
+                            a(href='#{p.link}') View all #{p.children.length} posts &rarr;
 
             .docs-content__footer
               ul.docs-content__footer__actions
