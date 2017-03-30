@@ -13,5 +13,4 @@ set -x
 export NODE_UNICODETABLE_UNICODEDATA_TXT="$(pwd)/UnicodeData.txt"
 
 npm install
-npm rebuild node-sass
 CI=true npm test
