@@ -54,7 +54,7 @@ block content
       if locals.events.length === 0
         h2 No Upcoming Events
       else
-        h2 Upcoming Events
+        h2 Past Events
 
   .container.events-container
     .container__content
@@ -68,15 +68,16 @@ block content
 
         .card-container
           each event in locals.events
-            a(href!=event.url target='_blank').card
-              .card-header(style='background-image: url(#{event.image})')
-                .card-content
-                  .card-header__date
-                    p #{event.day}
-                    p #{event.month.toUpperCase()}
-              .card-content.card-copy
-                h3.card-title  #{event.title}
-                .cta.cta--text More info &rarr;
+            if (new Date(event.date)).getTime() < Date.now()
+              a(href!=event.url target='_blank').card
+                .card-header(style='background-image: url(#{event.image})')
+                  .card-content
+                    .card-header__date
+                      p #{event.day}
+                      p #{event.month.toUpperCase()}
+                .card-content.card-copy
+                  h3.card-title  #{event.title}
+                  .cta.cta--text More info &rarr;
 
     .container__content.event-cta
       a(href="mailto:events@dcos.io").cta.cta--text Want to host your own DC/OS event? &rarr;
