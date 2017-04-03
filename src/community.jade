@@ -127,7 +127,7 @@ block content
           .events-carousel-btn.events-carousel-btn--prev
             img(src='/assets/images/icons/chevron-dark-left.svg')
 
-        .card-container
+        .card-container.px2
           each event in locals.events
             if (new Date(event.date)).getTime() < Date.now()
               a(href!=event.url target='_blank').card
