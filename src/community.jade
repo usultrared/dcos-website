@@ -107,11 +107,15 @@ block content
 
         .mxn2.flex.flex-auto.flex-wrap
           .lg-col-6.col-12.px2
-            h4.pb2.mb0 Apache Mesos (logo)
+            h4.pb2.mb0
+              img.width-24.align-middle.mr2(src='/assets/images/logos/mesos.svg')
+              | Apache Mesos
             p.m0 Apache Mesos acts as the kernel for the datacenter operating system, abstracting machine resources (CPU, GPU, memory, storage, etc.), and offering them to the services that run on DC/OS.
             p #[a(href='http://mesos.apache.org/') Learn about Mesos]
           .lg-col-6.col-12.px2
-            h4.pb2.mb0 Marathon (logo)
+            h4.pb2.mb0
+              img.width-24.align-middle.mr2(src='/assets/images/logos/marathon.svg')
+              | Marathon
             p.m0 Marathon is the Mesos framework that orchestrates containers in DC/OS. It matches resource offers with container requirements, and schedules containers on Mesos nodes.
             p #[a(href='https://mesosphere.github.io/marathon/') Learn about Marathon]
 
@@ -140,27 +144,6 @@ block content
                   h3.card-title  #{event.title}
                   .cta.cta--text More info &rarr;
 
-  //- Strategic Partners
-  .outer-container.bg-gray.clearfix.py5.px2#strategic-partners
-    .row
-      .max-width-4.mx-auto
-        .mxn2.flex.flex-auto.flex-wrap
-          .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb4
-            h2 Strategic Partners
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet iaculis metus. Fusce sed sapien a leo cursus maximus. Nam sollicitudin volutpat nisi in scelerisque. Curabitur pretium massa laoreet ex malesuada viverra. Donec eget tristique magna.
-
-      .max-width-4.mx-auto
-        .mxn2.flex.flex-auto.flex-wrap
-          .lg-col-6.col-12.px2.flex.justify-center
-            div
-              img.mb2(src='/assets/images/logos/microsoft.svg', style='height: 50px')
-              p.m0 Description here
-              p #[a(href='http://mesos.apache.org/') Callout here]
-          .lg-col-6.col-12.px2.flex.justify-center
-            div
-              img.mb2(src='/assets/images/logos/hpe.svg', style='height: 50px')
-              p.m0 Description here
-              p #[a(href='https://mesosphere.github.io/marathon/') Callout here]
 
 
   .container
