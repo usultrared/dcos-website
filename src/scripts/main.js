@@ -245,7 +245,7 @@ $('.related-pages > div > p').each(function(index) {
 var json = require('../demos.json');
 
 json.forEach(function(demo) {
-  $(".cards").append(
+  $(".demos-cards").append(
     `
     <div class="card card-content col-4 left-align bg-white has-footer">
       <div class="card-header" style="background-image: url(${window.location.protocol + '//' + window.location.host + demo.image})"></div>
