@@ -244,8 +244,6 @@ $('.related-pages > div > p').each(function(index) {
 ****************/
 var json = require('../demos.json');
 
-console.log(json)
-
 json.forEach(function(demo) {
   $(".cards").append(
     `
@@ -254,6 +252,9 @@ json.forEach(function(demo) {
       <h4 class="mt3 mb1">${demo.title}</h4>
       <label class="pill bg-indigo block ml2 border-box">DC/OS ${demo.dcos_version}</label>
       <p class="block mt2">${demo.description}</p>
+      <div class="callouts">
+        ${$.map(demo.callouts, (calloutUrl, name) => `<a class="inline-block" href="${calloutUrl}">${name}</a>`).join(' &bull; ').toString()}
+      </div>
       <div class="card-footer mt2">
         ${demo.packages.map(name => `<a href="#${name.replace(/\s+/g, '-').toLowerCase()}" class="pill bg-light-gray text-space-gray mt0 mb1">${name}</a>`).join(' ').toString()}
       </div>
