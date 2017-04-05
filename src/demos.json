@@ -1,0 +1,74 @@
+[
+  {
+    "image": "/assets/images/demos/geo-iot.png",
+    "title": "Geospatial IoT",
+    "dcos_version": "1.9",
+    "description": "IoT demo.",
+    "packages": ["Apache Kafka", "Apache Spark", "Elasticsearch"],
+    "callouts": {
+      "Github": "https://github.com/amollenkopf/dcos-iot-demo",
+      "Video": "https://www.youtube.com/watch?v=tOPmPIHuV-o",
+    },
+  },
+  {
+    "image": "/assets/images/demos/marvin.png",
+    "title": "MARVIN",
+    "dcos_version": "1.9",
+    "description": "Microservices demo.",
+    "packages": ["Go", "Node.js", "Python"],
+    "callouts": {
+      "Github": "https://github.com/mhausenblas/marvin",
+    },
+  },
+  {
+    "image": "/assets/images/demos/tweeter.png",
+    "title": "Tweeter",
+    "dcos_version": "1.9",
+    "description": "Twitter clone including analytics.",
+    "packages": ["using Apache Cassandra", "Apache Kafka", "Apache Zeppelin"],
+    "callouts": {
+      "Github": "https://github.com/mesosphere/tweeter",
+    },
+  },
+  {
+    "image": "/assets/images/demos/cd.png",
+    "title": "Continuous Delivery",
+    "dcos_version": "1.9",
+    "description": "Demo of a CI/CD pipeline.",
+    "packages": ["Jenkins"],
+    "callouts": {
+      "Github": "https://github.com/mesosphere/cd-demo",
+      "Video": "https://www.youtube.com/watch?v=cnIfSrMxgyE",
+    },
+  },
+  {
+    "image": "/assets/images/demos/github-stream.png",
+    "title": "GitHub Stream Data",
+    "dcos_version": "1.9",
+    "description": "Demo of processing GitHub API data.",
+    "packages": ["Apache Cassandra", "KairosDB", "Grafana"],
+    "callouts": {
+      "Github": "https://github.com/mesosphere/cassandra-kairosdb-tutorial",
+    },
+  },
+  {
+    "image": "/assets/images/demos/twitter-stream.png",
+    "title": "Twitter Stream Data",
+    "dcos_version": "1.9",
+    "description": "Demo of processing Twitter data streams.",
+    "packages": ["Apache Cassandra", "Apache Kafka", "Apache Spark", "Apache Zeppelin"],
+    "callouts": {
+      "Github": "https://github.com/mesosphere/iot-demo",
+    },
+  },
+  {
+    "image": "/assets/images/demos/crimebuster.png",
+    "title": "Crime Buster!",
+    "dcos_version": "1.9",
+    "description": "Time series demo around crime statistics.",
+    "packages": ["Apache Kafka", "Apache Spark", "Grafana", "InfluxDB"],
+    "callouts": {
+      "Github": "https://github.com/mesosphere/time-series-demo",
+    },
+  },
+]
