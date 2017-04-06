@@ -16,6 +16,7 @@ require('./typer2.js')
 require('./html-include.js')
 require('swagger-ui-browserify')
 require('./ngindox.js')
+require('./demos')
 
 import Wallop from 'wallop';
 import Hammer from 'hammerjs';
@@ -238,28 +239,3 @@ $('.related-pages > div > p').each(function(index) {
     $(this).text(cut(200));
   }
 })
-
-/****************
-  Demos json
-****************/
-var json = require('../demos.json');
-
-json.forEach(function(demo) {
-  $(".demos-cards").append(
-    `
-    <div class="card card-content col-4 left-align bg-white has-footer">
-      <div class="card-header" style="background-image: url(${window.location.protocol + '//' + window.location.host + demo.image})"></div>
-      <h4 class="mt3 mb1">${demo.title}</h4>
-      <a href="#dcos-version-${demo.dcos_version}" class="pill bg-indigo block ml2 border-box my0">DC/OS ${demo.dcos_version}</a>
-      <p class="block mt2">${demo.description}</p>
-      <div class="callouts">
-        ${$.map(demo.callouts, (calloutUrl, name) => `<a class="inline-block mt0" href="${calloutUrl}">${name}</a>`).join(' &bull; ').toString()}
-      </div>
-      <div class="card-footer mt2">
-        ${demo.packages.map(name => `<a href="#${name.replace(/\s+/g, '-').toLowerCase()}" class="pill bg-light-gray text-space-gray mt0 mb1">${name}</a>`).join(' ').toString()}
-      </div>
-    </div>
-    `
-  );
-
-});
