@@ -97,3 +97,9 @@
 /docs/1.9/administration/haproxy-adminrouter.html /docs/1.9/administration/tls-ssl/haproxy-adminrouter/
 /docs/1.9/administration/debugging/index.html /docs/1.9/usage/debugging/cli-debugging/task-exec/
 /docs/1.9/administration/debugging/quickstart.html /docs/1.9/usage/debugging/cli-debugging/task-exec/
+/docs/1.8/administration/installing/cloud/aws/advanced/aws-custom.html /docs/1.8/administration/installing/cloud/aws/advanced/
+/docs/1.9/administration/installing/cloud/aws/advanced/aws-custom.html /docs/1.9/administration/installing/cloud/aws/advanced/
+/docs/1.8/administration/installing/cloud/aws/advanced/quickstart.html /docs/1.8/administration/installing/cloud/aws/advanced/
+/docs/1.9/administration/installing/cloud/aws/advanced/quickstart.html /docs/1.9/administration/installing/cloud/aws/advanced/
+/docs/1.8/administration/installing/cloud/aws/advanced/system-requirements.html /docs/1.8/administration/installing/cloud/aws/advanced/
+/docs/1.9/administration/installing/cloud/aws/advanced/system-requirements.html /docs/1.9/administration/installing/cloud/aws/advanced/
