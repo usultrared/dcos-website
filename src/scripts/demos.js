@@ -25,7 +25,7 @@ function clean () {
 
 function render (items) {
   items.forEach(demo => {
-    $(".demos-cards").append(
+    $(".demos-cards").prepend(
       `
       <div class="card card-content col-4 left-align bg-white has-footer">
         <div class="card-header" style="background-image: url(${window.location.protocol + '//' + window.location.host + demo.image})"></div>
@@ -50,6 +50,19 @@ function main () {
   const query = getQuery()
   const items = getItems(query)
   render(items)
+
+  if(query) {
+    $(".demos-cards").prepend(
+      `
+      <div class="flex flex-wrap justify-start items-center col-12 mb2">
+        <h3 class="px1 col-8 border-box">Showing demos matching: ${query}</h3>
+        <span class="px1 col-4 right-align border-box">
+          <a href="${document.location.href.replace(location.hash , '' )}">Reset filter</a>
+        </span>
+      </div>
+      `
+    )
+  }
 }
 
 window.onhashchange = function () {
