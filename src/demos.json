@@ -2,7 +2,7 @@
   {
     "image": "/assets/images/demos/geo-iot.png",
     "title": "Geospatial IoT",
-    "dcos_version": "1.8",
+    "dcos_version": ["1.8"],
     "description": "Configure a full stack geo-enabled Internet of Things (IoT) solution",
     "packages": ["Apache Kafka", "Apache Spark", "Elasticsearch"],
     "callouts": {
@@ -24,7 +24,7 @@
   {
     "image": "/assets/images/demos/cd.png",
     "title": "Continuous Delivery",
-    "dcos_version": "1.9",
+    "dcos_version": ["1.9"],
     "description": "Set up a CD pipeline, with advanced options",
     "packages": ["Jenkins"],
     "callouts": {
@@ -35,7 +35,7 @@
   {
     "image": "/assets/images/demos/github-stream.png",
     "title": "GitHub Streaming Data",
-    "dcos_version": "1.8",
+    "dcos_version": ["1.8"],
     "description": "Process streaming data from the GitHub API",
     "packages": ["Apache Cassandra", "KairosDB", "Grafana"],
     "callouts": {
@@ -45,7 +45,7 @@
   {
     "image": "/assets/images/demos/crimebuster.png",
     "title": "Crime Buster",
-    "dcos_version": "1.8",
+    "dcos_version": ["1.8"],
     "description": "Process and visualize streaming crime data online and offline",
     "packages": ["Apache Kafka", "Apache Spark", "Grafana", "InfluxDB"],
     "callouts": {
