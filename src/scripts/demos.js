@@ -31,14 +31,14 @@ function render (items) {
         <div class="card-header" style="background-image: url(${window.location.protocol + '//' + window.location.host + demo.image})"></div>
         <h4 class="mt3 mb1">${demo.title}</h4>
         <div>
-          ${demo.dcos_version.map(version => `<a href="#${hash(version)}" class="pill bg-indigo text-white mr1 my0 border-box">DC/OS ${version}</a>`).join(' ').toString()}
+          ${demo.dcos_version.map(version => `<span href="#${hash(version)}" class="pill bg-indigo text-white mr1 my0 border-box">DC/OS ${version}</span>`).join(' ').toString()}
         </div>
         <p class="block mt2">${demo.description}</p>
         <div>
           ${$.map(demo.callouts, (calloutUrl, name) => `<a class="inline-block mt0" href="${calloutUrl}">${name}</a>`).join(' ').toString()}
         </div>
         <div class="card-footer mt2">
-          ${demo.packages.map(name => `<a href="#${hash(name)}" class="pill bg-light-gray text-space-gray mt0 mb1">${name}</a>`).join(' ').toString()}
+          ${demo.packages.map(name => `<span href="#${hash(name)}" class="pill bg-light-gray text-space-gray mt0 mb1">${name}</span>`).join(' ').toString()}
         </div>
       </div>
       `
@@ -51,27 +51,30 @@ function main () {
   const items = getItems(query)
   render(items)
 
-  if(query) {
-    $(".demos-cards").prepend(
-      `
-      <div class="flex flex-wrap justify-start items-center col-12 mb2">
-        <h3 class="px1 col-8 border-box">Showing demos matching: ${query}</h3>
-        <span class="px1 col-4 right-align border-box">
-          <a href="${document.location.href.replace(location.hash , '' )}">Reset filter</a>
-        </span>
-      </div>
-      `
-    )
-  }
+  // if(query) {
+  //   $(".demos-cards").prepend(
+  //     `
+  //     <div class="flex flex-wrap justify-start items-center col-12 mb2">
+  //       <h3 class="px1 col-8 border-box">Showing demos matching: ${query}</h3>
+  //       <span class="px1 col-4 right-align border-box">
+  //         <a href="${document.location.href.replace(location.hash , '' )}">Reset filter</a>
+  //       </span>
+  //     </div>
+  //     `
+  //   )
+  // }
 }
 
-window.onhashchange = function () {
-  const query = getQuery()
+/*****************
+  This is used to listen to when people filter tags
+*****************/
+// window.onhashchange = function () {
+//   const query = getQuery()
 
-  if (query) {
-    clean()
-    main()
-  }
-}
+//   if (query) {
+//     clean()
+//     main()
+//   }
+// }
 
 $(document).ready(main)
