@@ -183,54 +183,31 @@ block content
 
 
   //- Testimonials
-  //- .container.partner-quote-container
-  //-   .container__content
-  //-     .partner-quote-block-container
-  //-       .partner-quote-block.active
-  //-         blockquote.partner-quote-block__quote "The world needed a better architecture for all modern apps, not just containers. The open source community has come together around DC/OS to deliver an amazing ecosystem of products and datacenter services."
-  //-         cite.partner-quote-block__cite Florian Leibert, CEO & Co-Founder, Mesosphere
-  //-       .partner-quote-block.hidden
-  //-         blockquote.partner-quote-block__quote "Microsoft selected DC/OS for the Azure Container Service so our customers can easily build, deploy and manage modern applications on our enterprise-ready Azure cloud platform, as well as in private and hybrid cloud environments."
-  //-         cite.partner-quote-block__cite Mark Russinovich, Azure Chief Technology Officer, Microsoft
-  //-       .partner-quote-block.hidden
-  //-         blockquote.partner-quote-block__quote "DC/OS is specifically designed for organizations seeking highly scalable, agile application development with continuous improvement and robust, reliable deployment."
-  //-         cite.partner-quote-block__cite Edy Liongosari, Managing Director, Accenture Labs
+  .container.partner-quote-container
+    .container__content
+      .partner-quote-block-container
+        .partner-quote-block.active
+          blockquote.partner-quote-block__quote "The world needed a better architecture for all modern apps, not just containers. The open source community has come together around DC/OS to deliver an amazing ecosystem of products and datacenter services."
+          cite.partner-quote-block__cite Florian Leibert, CEO & Co-Founder, Mesosphere
+        .partner-quote-block.hidden
+          blockquote.partner-quote-block__quote "Microsoft selected DC/OS for the Azure Container Service so our customers can easily build, deploy and manage modern applications on our enterprise-ready Azure cloud platform, as well as in private and hybrid cloud environments."
+          cite.partner-quote-block__cite Mark Russinovich, Azure Chief Technology Officer, Microsoft
+        .partner-quote-block.hidden
+          blockquote.partner-quote-block__quote "DC/OS is specifically designed for organizations seeking highly scalable, agile application development with continuous improvement and robust, reliable deployment."
+          cite.partner-quote-block__cite Edy Liongosari, Managing Director, Accenture Labs
 
-  //-     ul.partner-quote-logo-list
-  //-       li.partner-quote-logo-list__partner-quote-logo.active
-  //-         a(data-activate-quote='0')
-  //-           img(src="/assets/images/logos/mesosphere.svg")
-  //-       li.partner-quote-logo-list__partner-quote-logo
-  //-         a(data-activate-quote='1')
-  //-           img(src="/assets/images/logos/microsoft.svg")
-  //-       li.partner-quote-logo-list__partner-quote-logo
-  //-         a(data-activate-quote='2')
-  //-           img(src="/assets/images/logos/accenture.svg")
+      ul.partner-quote-logo-list
+        li.partner-quote-logo-list__partner-quote-logo.active
+          a(data-activate-quote='0')
+            img(src="/assets/images/logos/mesosphere.svg")
+        li.partner-quote-logo-list__partner-quote-logo
+          a(data-activate-quote='1')
+            img(src="/assets/images/logos/microsoft.svg")
+        li.partner-quote-logo-list__partner-quote-logo
+          a(data-activate-quote='2')
+            img(src="/assets/images/logos/accenture.svg")
 
 
-  .container.events-container.py5.px2
-    .row
-      h2.center.max-width-4.pb3.mx-auto Upcoming Events
-      .events-carousel
-        if (locals.events.length)
-          .events-carousel-btn.events-carousel-btn--next
-            img(src='/assets/images/icons/chevron-dark-right.svg')
-
-          .events-carousel-btn.events-carousel-btn--prev
-            img(src='/assets/images/icons/chevron-dark-left.svg')
-
-        .card-container.px2
-          each event in locals.events.slice().reverse()
-            if (new Date(event.date)).getTime() > Date.now()
-              a(href!=event.url target='_blank').card
-                .card-header(style='background-image: url(#{event.image})')
-                  .card-content
-                    .card-header__date
-                      p #{event.day}
-                      p #{event.month.toUpperCase()}
-                .card-content.card-copy
-                  h3.card-title  #{event.title}
-                  .cta.cta--text More info &rarr;
 
   .overlay(data-overlay='video-overlay')
     .overlay__close-cta
