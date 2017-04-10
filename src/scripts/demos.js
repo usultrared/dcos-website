@@ -28,19 +28,17 @@ function render (items) {
     $(".demos-cards").prepend(
       `
       <div class="card card-content col-4 left-align bg-white has-footer">
-        <div class="card-header" style="background-image: url(${window.location.protocol + '//' + window.location.host + demo.image})"></div>
-        <h4 class="mt3 mb1">${demo.title}</h4>
-        <div>
-          ${demo.dcos_version.map(version => `<span href="#${hash(version)}" class="pill bg-indigo text-white mr1 my0 border-box">DC/OS ${version}</span>`).join(' ').toString()}
-        </div>
+        <h4 class="mt3 mb1 bold">${demo.title}</h4>
+        <a href="#${demo.dcos_version}" style="font-size: .95rem;" class="block text-space-gray border-box my0">DC/OS ${demo.dcos_version.toString()}</a>
         <p class="block mt2">${demo.description}</p>
-        <div>
-          ${$.map(demo.callouts, (calloutUrl, name) => `<a class="inline-block mt0" href="${calloutUrl}">${name}</a>`).join(' ').toString()}
+        <div class="callouts">
+          ${$.map(demo.callouts, (calloutUrl, name) => `<a class="inline-block mt0 bold" href="${calloutUrl}">${name}</a>`).join(' &bull; ').toString()}
         </div>
         <div class="card-footer mt2">
           ${demo.packages.map(name => `<span href="#${hash(name)}" class="pill bg-light-gray text-space-gray mt0 mb1">${name}</span>`).join(' ').toString()}
         </div>
       </div>
+
       `
     );
   });
