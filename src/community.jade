@@ -24,19 +24,18 @@ block content
 
     .mx-auto.max-width-4
       .container__content.community-hero
-        h1.mb0 Welcome to the DC/OS Community
-        p.hero-subtitle(style='max-width: 46rem;').mb0 DC/OS is 100% open source, and based on Apache Mesos and Marathon. Learn how to get involved in DC/OS and the OSS projects we are built on here.
+        h1.mb0 Join the Community
 
   .outer-container.bg-gray.clearfix.py5.px2
     .row
       .max-width-4.mx-auto
         .mxn2.flex.flex-wrap.flex-auto
-          .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
-            h2 Get Connected
+          .md-col-8.col-12.px2.mx-auto.pb2.center.justify-center
+            h2 Get Involved
             p Whether you need help, want to contribute, or are just looking for the latest news, there are lots ways to connect with your fellow DC/OS community members. Feel free to reach out on any channel you like; we'd love to hear from you!
 
         .mxn2.flex.flex-wrap.flex-auto
-          .lg-col-4.col-12.lg-mb0.flex.justify-center.left-align
+          .sm-col-4.col-12.lg-mb0.flex.justify-center.left-align
               div
                 h5.hero-list__item__copy__title.pb1 Get Help
                 ul
@@ -57,28 +56,28 @@ block content
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/stackoverflow.svg")
                       | StackOverflow
 
-            .lg-col-4.col-12.lg-mb0.flex.justify-center.left-align
+            .sm-col-4.col-12.lg-mb0.flex.justify-center.left-align
               div
                 h5.hero-list__item__copy__title.pb1 Contribute
                 ul
                   li.pb2
                     a.opacity-1.text-black(href='https://jira.mesosphere.com/')
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/jira.svg")
-                      | Jira
+                      | Report a Bug
                   li.pb2
                     a.opacity-1.text-black(href='https://github.com/dcos')
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/github.svg")
                       | GitHub
                   li.pb2
-                    a.opacity-1.text-black(href='https://github.com/dcos/community')
+                    a.opacity-1.text-black(href='https://github.com/dcos/community/blob/master/README.md')
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/communities.svg")
                       | Working groups
                   li
-                    a.opacity-1.text-black(href='https://github.com/dcos/community/tree/master/pmc')
+                    a.opacity-1.text-black(href='dcos.io/contribute')
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/communities.svg")
                       | Project Mgmt Committee
 
-            .lg-col-4.col-12.flex.justify-center.left-align
+            .sm-col-4.col-12.flex.justify-center.left-align
               div
                 h5.hero-list__item__copy__title.pb1 Get Updates
                 ul
@@ -99,41 +98,12 @@ block content
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/calendar.svg")
                       | Calendar
 
-  //- Contribute to DC/OS
-  .outer-container.bg-white.clearfix.py5.px2
-    .row
-      .max-width-4.mx-auto
-        .mxn2.flex.flex-auto.flex-wrap
-          .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
-            h2 Contribute to DC/OS
-            p DC/OS is fully open source, and we appreciate contributions! Proposing documentation changes, supporting fellow users, participating in working groups, running local meetups, improving our examples and demos, adding packages to the universe, and of course coding are all ways to contribute.
-
-            p #[a(href='https://dcos.io/contribute/') Learn how to contribute to DC/OS]
-
-  //- Featured communities
-  .outer-container.bg-gray.clearfix.py5.px2#featured-communities
-    .row
-      .max-width-4.mx-auto
-        h2.center.max-width-4.pb2.mx-auto Featured communities
-
-        .mxn2.flex.flex-auto.flex-wrap
-          .lg-col-6.col-12.px2
-            h4.pb2.mb0
-              img.width-24.align-middle.mr2(src='/assets/images/logos/mesos.svg')
-              | Apache Mesos
-            p.m0 Apache Mesos acts as the kernel for the datacenter operating system, abstracting machine resources (CPU, GPU, memory, storage, etc.), and offering them to the services that run on DC/OS.
-            p #[a(href='http://mesos.apache.org/') Learn about Mesos]
-          .lg-col-6.col-12.px2
-            h4.pb2.mb0
-              img.width-24.align-middle.mr2(src='/assets/images/logos/marathon.svg')
-              | Marathon
-            p.m0 Marathon is the Mesos framework that orchestrates containers in DC/OS. It matches resource offers with container requirements, and schedules containers on Mesos nodes.
-            p #[a(href='https://mesosphere.github.io/marathon/') Learn about Marathon]
-
-
   .container.events-container.py5.px2
     .row
-      h2.center.max-width-4.pb3.mx-auto Recent Events
+      div.toggle.center.max-width-4.mx-auto.mb3
+        a(href='#recent' data-events='recent' class='pr1 inline-block text-black h2') Recent Events
+        a(href='#upcoming' data-events='upcoming' class='pl1 inline-block h2') Upcoming Events
+
       .events-carousel
         if (locals.events.length)
           .events-carousel-btn.events-carousel-btn--next
@@ -142,7 +112,7 @@ block content
           .events-carousel-btn.events-carousel-btn--prev
             img(src='/assets/images/icons/chevron-dark-left.svg')
 
-        .card-container.px2
+        .card-container.px2.recent-events
           each event in locals.events
             if (new Date(event.date)).getTime() < Date.now()
               a(href!=event.url target='_blank').card
@@ -155,6 +125,50 @@ block content
                   h3.card-title  #{event.title}
                   .cta.cta--text More info &rarr;
 
+        .card-container.px2.upcoming-events.hide
+          each event in locals.events.reverse()
+            if (new Date(event.date)).getTime() > Date.now()
+              a(href!=event.url target='_blank').card
+                .card-header(style='background-image: url(#{event.image})')
+                  .card-content
+                    .card-header__date
+                      p #{event.day}
+                      p #{event.month.toUpperCase()}
+                .card-content.card-copy
+                  h3.card-title  #{event.title}
+                  .cta.cta--text More info &rarr;
+
+  //- Featured communities
+  .outer-container.bg-gray.clearfix.py5.px2#featured-communities
+    .row
+      .max-width-4.mx-auto
+        h2.center.max-width-4.pb2.mx-auto Related Communities
+
+        .mxn2.flex.flex-auto.flex-wrap
+          .md-col-6.col-12.px2
+            h4.pb2.mb0
+              img.width-24.align-middle.mr2(src='/assets/images/logos/mesos.svg')
+              | Apache Mesos
+            p.m0 Apache Mesos acts as the kernel for the datacenter operating system, abstracting machine resources (CPU, GPU, memory, storage, etc.), and offering them to the services that run on DC/OS.
+            p #[a(href='http://mesos.apache.org/') Learn about Mesos]
+          .md-col-6.col-12.px2
+            h4.pb2.mb0
+              img.width-24.align-middle.mr2(src='/assets/images/logos/marathon.svg')
+              | Marathon
+            p.m0 Marathon is the Mesos framework that orchestrates containers in DC/OS. It matches resource offers with container requirements, and schedules containers on Mesos nodes.
+            p #[a(href='https://mesosphere.github.io/marathon/') Learn about Marathon]
+
+
+  //- Contribute to DC/OS
+  .outer-container.bg-white.clearfix.py5.px2
+    .row
+      .max-width-4.mx-auto
+        .mxn2.flex.flex-auto.flex-wrap
+          .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
+            h2 Contribute to DC/OS
+            p DC/OS is fully open source, and we appreciate contributions! Proposing documentation changes, supporting fellow users, participating in working groups, running local meetups, improving our examples and demos, adding packages to the universe, and of course coding are all ways to contribute.
+
+            p #[a(href='https://dcos.io/contribute/') Learn how to contribute to DC/OS]
 
 
   .container

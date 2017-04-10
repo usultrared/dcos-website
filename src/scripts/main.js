@@ -238,3 +238,15 @@ $('.related-pages > div > p').each(function(index) {
     $(this).text(cut(200));
   }
 })
+
+/****************
+  Event tabs
+****************/
+$('.toggle a').click(function(){
+  $(this).addClass('text-black').siblings().removeClass('text-black')
+  if($(this).attr('data-events') === 'upcoming') {
+    $('.card-container.upcoming-events').removeClass('hide').siblings().addClass('hide')
+  }else{
+    $('.card-container.recent-events').removeClass('hide').siblings().addClass('hide')
+  }
+})
