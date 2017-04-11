@@ -9,12 +9,55 @@
     },
   },
   {
-    "title": "",
-    "description": "",
-    "dcos_version": [],
-    "difficulty": "",
+    "title": "Autoscaling",
+    "description": "Increase or decrease computing resources based on usage",
+    "dcos_version": ["1.7","1.8","1.9"],
+    "difficulty": "Advanced",
     "callouts": {
-      "": "",
+      "1.7": "https://dcos.io/docs/1.7/usage/tutorials/autoscaling/",
+      "1.8": "https://dcos.io/docs/1.8/usage/tutorials/autoscaling/",
+      "1.9": "https://dcos.io/docs/1.9/usage/tutorials/autoscaling/",
     },
   },
+  {
+    "title": "Building an IoT Pipeline",
+    "description": "Deploy a containerized Ruby on Rails app, and analyze the data it produces",
+    "dcos_version": ["1.8","1.9"],
+    "difficulty": "Intermediate",
+    "callouts": {
+      "1.8": "https://dcos.io/docs/1.8/usage/tutorials/iot_pipeline/",
+      "1.9": "https://dcos.io/docs/1.9/usage/tutorials/iot_pipeline/",
+    },
+  },
+  {
+    "title": "Running a Service",
+    "description": "Create and deploy simple services using the DC/OS GUI and CLI",
+    "dcos_version": ["1.8","1.9"],
+    "difficulty": "Beginner",
+    "callouts": {
+      "1.8": "https://dcos.io/docs/1.8/usage/tutorials/create-service/",
+      "1.9": "https://dcos.io/docs/1.9/usage/tutorials/create-service/",
+    },
+  },
+  {
+    "title": "Running Stateful Services",
+    "description": "Create and reserve persistent volumes for tasks that require state",
+    "dcos_version": ["1.8","1.9"],
+    "difficulty": "Advanced",
+    "callouts": {
+      "1.8": "https://dcos.io/docs/1.8/usage/tutorials/stateful-services/",
+      "1.9": "https://dcos.io/docs/1.9/usage/tutorials/stateful-services/",
+    },
+  },
+  {
+  "title": "Labeling Tasks and Jobs",
+  "description": "Track and report cluster resources uses by different app components",
+  "dcos_version": ["1.7","1.8","1.9"],
+  "difficulty": "Intermediate",
+  "callouts": {
+    "1.7": "https://dcos.io/docs/1.7/usage/tutorials/task-labels/",
+    "1.8": "https://dcos.io/docs/1.8/usage/tutorials/task-labels/",
+    "1.9": "https://dcos.io/docs/1.9/usage/tutorials/task-labels/",
+  },
+},
 ]
