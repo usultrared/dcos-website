@@ -16,7 +16,7 @@ As you know, [DC/OS 1.9](/releases/) is out, and the community team needs your h
 
 ## How to participate
 
-* Pick an issue from the [list of examples](https://github.com/dcos/examples/labels/1.9-migration) to update, and assign the issue to yourself
+* Pick an issue from the [list of examples](https://github.com/dcos/examples/labels/1.9-migration) to update, and leave a comment to indicate that you're working on it.
 * On your own fork of the examples repo, make a copy of the 1.8 example and name it 1.9. Test the example on a [DC/OS 1.9 cluster](/docs/1.9/administration/installing/). As you test, replace the old screen shots with new ones and make any necessary corrections to the example. Add a link to your newly created 1.9 example to the `README.md` file for your example's directory.
     * If the example works out of the box, or you are able to correct it, open a PR to add your new 1.9 example (including the example itself and its addition to the `README.md` file).
     * If you can't get your example to work, add a detailed description of what went wrong on the GitHub issue.
