@@ -1,13 +1,33 @@
 [
+  { "title": "Linux.conf.au",
+    "image": "/assets/images/blog/2017-02-23_lca2017_0.jpg",
+    "date": "2017-01-16",
+    "url": "/blog/2017/linux-conf-au-2017-retrospective/" },
+
+ { "title": "Open Networking Summit",
+   "image": "/assets/images/events/Santa_Clara.jpg",
+   "date": "2017-02-03",
+   "url": "http://sched.co/9kxW" },
+
+  { "title": "Spark Summit East",
+    "image": "/assets/images/blog/2017-03-02_booth_spark_summit_east.jpg",
+    "date": "2017-02-07",
+    "url": "/blog/2017/open-source-team-at-spark-summit-east-2017/" },
+
+  { "title": "SCaLE",
+    "image": "/assets/images/blog/2017-03-22_scale15x_paasta.jpg",
+    "date": "2017-03-02",
+    "url": "/blog/2017/reflecting-on-scale-15x/" },
+
   { "title": "Meetup - Presenting the Instana Package for DC/OS",
     "image": "/assets/images/events/San_Francisco_2.jpg",
     "date": "2017-03-22",
-    "url": "https://www.meetup.com/Bay-Area-Mesos-User-Group/events/238060698/" },
+    "url": "https://www.youtube.com/watch?v=JFkOmETATYc&feature=youtu.be" },
 
   { "title": "Javaland",
     "image": "/assets/images/events/Bruehl.jpg",
     "date": "2017-03-28",
-    "url": "https://www.javaland.eu/en/home/" },
+    "url": "https://programm.javaland.eu/2017/talk.html#talk?talkId=529298" },
 
   { "title": "Meetup - Running Production Containers and Big Data Services Gets Even Better",
     "image": "/assets/images/events/Berlin.jpg",
@@ -17,7 +37,7 @@
   { "title": "CloudNativeCon + KubeCon",
     "image": "/assets/images/events/Berlin2.jpg",
     "date": "2017-03-29",
-    "url": "http://events.linuxfoundation.org/events/cloudnativecon-and-kubecon-europe" },
+    "url": "https://youtu.be/mijPAVUYTYI" },
 
   { "title": "Meetup - Ben Hindman at Denver DevOps",
     "image": "/assets/images/events/Denver.jpg",
@@ -42,7 +62,7 @@
   { "title": "#INGLovesIT",
     "image": "/assets/images/events/Bucharest.jpg",
     "date": "2017-04-07",
-    "url": "https://www.ing-events.com/inglovesit" },
+    "url": "https://www.ing-events.com/inglovesit/en/jarg-schad/" },
 
   { "title": "Flink Forward",
     "image": "/assets/images/blog/2017-04-17_flink_forward_presentation.jpg",
