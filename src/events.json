@@ -45,9 +45,9 @@
     "url": "https://www.ing-events.com/inglovesit" },
 
   { "title": "Flink Forward",
-    "image": "/assets/images/events/San_Francisco.jpg",
+    "image": "/assets/images/blog/2017-04-17_flink_forward_presentation.jpg",
     "date": "2017-04-10",
-    "url": "http://sf.flink-forward.org/" },
+    "url": "/blog/2017/flink-forward-in-san-francisco/index.html" },
 
   { "title": "Meetup - Utah Scala Enthusiasts",
     "image": "/assets/images/events/Salt_Lake_City.jpg",
