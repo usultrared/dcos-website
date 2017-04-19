@@ -99,8 +99,8 @@ block content
   .container.events-container.py4.px2
     .row
       div.toggle.center.max-width-4.mx-auto.mb3
-        a(href='#recent' data-events='recent' class='pr1 inline-block text-black h2') Recent Events
-        a(href='#upcoming' data-events='upcoming' class='pl1 inline-block h2') Upcoming Events
+        a(href='#upcoming' data-events='upcoming' class='pr1 inline-block text-black h2') Upcoming Events
+        a(href='#recent' data-events='recent' class='pl1 inline-block h2') Recent Events
 
       .events-carousel
         if (locals.events.length)
@@ -110,7 +110,20 @@ block content
           .events-carousel-btn.events-carousel-btn--prev
             img(src='/assets/images/icons/chevron-dark-left.svg')
 
-        .card-container.px2.recent-events
+        .card-container.px2.upcoming-events
+          each event in locals.events.reverse()
+            if (new Date(event.date)).getTime() > Date.now()
+              a(href!=event.url target='_blank').card
+                .card-header(style='background-image: url(#{event.image})')
+                  .card-content
+                    .card-header__date
+                      p #{event.day}
+                      p #{event.month.toUpperCase()}
+                .card-content.card-copy
+                  h3.card-title  #{event.title}
+                  .cta.cta--text More info &rarr;
+
+        .card-container.px2.recent-events.hide
           each event in locals.events
             if (new Date(event.date)).getTime() < Date.now()
               a(href!=event.url target='_blank').card
@@ -123,18 +136,6 @@ block content
                   h3.card-title  #{event.title}
                   .cta.cta--text More info &rarr;
 
-        .card-container.px2.upcoming-events.hide
-          each event in locals.events.reverse()
-            if (new Date(event.date)).getTime() > Date.now()
-              a(href!=event.url target='_blank').card
-                .card-header(style='background-image: url(#{event.image})')
-                  .card-content
-                    .card-header__date
-                      p #{event.day}
-                      p #{event.month.toUpperCase()}
-                .card-content.card-copy
-                  h3.card-title  #{event.title}
-                  .cta.cta--text More info &rarr;
 
   //- Featured communities
   .outer-container.bg-gray.clearfix.py4.px2#featured-communities
