@@ -18,7 +18,7 @@ block head
 
 block content
 
-  .container.container--dark-background.pb5.px2.sm-pb0(style='display: block;')
+  .container.container--dark-background.pb4.px2.sm-pb0(style='display: block;')
     .mx-auto.max-width-4
       +header(style='padding: 0;')
 
@@ -45,10 +45,6 @@ block content
                     a.opacity-1.text-black(href='http://chat.dcos.io/')
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/slack.svg")
                       | Slack invite
-                  li.pb2
-                    a.opacity-1.text-black(href='http://dcos-community.slack.com')
-                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/slack.svg")
-                      | Slack login
                   li
                     a.opacity-1.text-black(href='http://stackoverflow.com/questions/tagged/dcos')
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/stackoverflow.svg")
@@ -56,7 +52,7 @@ block content
 
             .sm-col-4.col-12.lg-mb0.flex.sm-justify-center.left-align
               div.px2.mb2
-                h5.hero-list__item__copy__title.pb1 Contribute
+                h5.hero-list__item__copy__title.pb1 Get Involved
                 ul
                   li.pb2
                     a.opacity-1.text-black(href='https://jira.mesosphere.com/')
@@ -73,7 +69,7 @@ block content
                   li
                     a.opacity-1.text-black(href='http://dcos.io/contribute')
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/communities.svg")
-                      | Project Mgmt Committee
+                      | Contribute
 
             .sm-col-4.col-12.flex.sm-justify-center.left-align
               div.px2.mb3
@@ -96,11 +92,16 @@ block content
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/calendar.svg")
                       | Calendar
 
-  .container.events-container.py4.px2
+
+  .container.events-container.py2.px2
     .row
+    .max-width-4.mx-auto
+      .mxn2.flex.flex-auto.flex-wrap
+        .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
+          h2 Find us at an event
       div.toggle.center.max-width-4.mx-auto.mb3
-        a(href='#upcoming' data-events='upcoming' class='pr1 inline-block text-black h2') Upcoming Events
-        a(href='#recent' data-events='recent' class='pl1 inline-block h2') Recent Events
+        a(href='#upcoming' data-events='upcoming' class='pr1 inline-block text-black h3') Upcoming
+        a(href='#recent' data-events='recent' class='pl1 inline-block h3') Recent
 
       .events-carousel
         if (locals.events.length)
