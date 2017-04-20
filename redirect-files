@@ -270,14 +270,6 @@
 /docs/1.9/usage/managing-services/index.html /docs/1.9/deploying-services/
 /docs/1.9/usage/managing-services/install/index.html /docs/1.9/deploying-services/install/
 /docs/1.9/usage/managing-services/list/index.html /docs/1.9/usage/managing-services/monitoring/
-/docs/1.9/usage/managing-services/momee/deploy-momee/index.html /docs/1.9/deploying-services/momee/deploy-momee/
-/docs/1.9/usage/managing-services/momee/deploy-service/index.html /docs/1.9/deploying-services/momee/deploy-service/
-/docs/1.9/usage/managing-services/momee/docker-creds-agent/index.html /docs/1.9/deploying-services/momee/docker-creds-agent/
-/docs/1.9/usage/managing-services/momee/index.html /docs/1.9/deploying-services/momee/
-/docs/1.9/usage/managing-services/momee/momee-auth/index.html /docs/1.9/deploying-services/momee/momee-auth/
-/docs/1.9/usage/managing-services/momee/push-momee/index.html /docs/1.9/deploying-services/momee/push-momee/
-/docs/1.9/usage/managing-services/momee/res-quotas/index.html /docs/1.9/deploying-services/momee/res-quotas/
-/docs/1.9/usage/managing-services/momee/user-perms/index.html /docs/1.9/deploying-services/momee/user-perms/
 /docs/1.9/usage/managing-services/monitor-services/index.html /docs/1.9/deploying-services/monitor-services/
 /docs/1.9/usage/managing-services/monitoring/index.html /docs/1.9/usage/managing-services/monitor-services/
 /docs/1.9/usage/managing-services/rest-api/index.html /docs/1.9/deploying-services/marathon-api/
@@ -333,8 +325,7 @@
 /docs/1.9/usage/tutorials/registry/index.html https://github.com/dcos/examples/tree/master/registry/1.8
 /docs/1.9/usage/tutorials/task-labels/index.html /docs/1.9/tutorials/task-labels/
 /docs/1.9/usage/webinterface/index.html /docs/1.9/gui/
-/docs/1.9/version-policy/index.html /docs/1.9/release-notes/version-policy/
-/docs/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
+/docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
 /docs/index.html /docs/latest/
 /docs/latest /docs/latest/
 /docs/support/index.html /community/
