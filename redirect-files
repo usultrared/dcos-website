@@ -4,6 +4,7 @@
 /docs /docs/latest/
 /docs/1.7/administration/dcosarchitecture/security/index.html /docs/1.7/overview/
 /docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
+/docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
 /docs/1.7/administration/installing/custom/cli/index.html /docs/1.7/administration/installing/custom/cli/
 /docs/1.7/administration/installing/custom/gui/index.html /docs/1.7/administration/installing/custom/gui/
 /docs/1.7/administration/installing/index.html /docs/1.7/administration/installing/
@@ -68,6 +69,7 @@
 /docs/1.9/administration/access-node/index.html /docs/1.9/administering-clusters/sshcluster/
 /docs/1.9/administration/access-node/sshcluster/index.html /docs/1.9/administering-clusters/sshcluster/
 /docs/1.9/administration/access-node/tunnel/index.html /docs/1.9/developing-services/tunnel/
+/docs/1.9/administration/component-management/index.html /docs/1.9/administering-clusters/component-management/
 /docs/1.9/administration/debugging/index.html /docs/1.9/usage/debugging/cli-debugging/task-exec/
 /docs/1.9/administration/debugging/quickstart/index.html /docs/1.9/usage/debugging/cli-debugging/task-exec/
 /docs/1.9/administration/faq/index.html /docs/1.9/installing/faq/
@@ -78,12 +80,13 @@
 /docs/1.9/administration/high-availability/index.html /docs/1.9/networking/high-availability/
 /docs/1.9/administration/high-availability/multi-region/index.html /docs/1.9/networking/high-availability/multi-region/
 /docs/1.9/administration/high-availability/multi-zone/index.html /docs/1.9/networking/high-availability/multi-zone/
-/docs/1.9/administration/id-and-access-mgt/index.html /docs/1.9/security/
-/docs/1.9/administration/id-and-access-mgt/configure-your-security/index.html /docs/1.9/security/configure-your-security/
-/docs/1.9/administration/id-and-access-mgt/managing-authentication/index.html /docs/1.9/security/managing-authentication/
 /docs/1.9/administration/id-and-access-mgt/add-user-script/index.html /docs/1.9/security/add-user-script/
-/docs/1.9/administration/id-and-access-mgt/user-management/index.html /docs/1.9/security/user-management/
+/docs/1.9/administration/id-and-access-mgt/configure-your-security/index.html /docs/1.9/security/configure-your-security/
 /docs/1.9/administration/id-and-access-mgt/iam-api/index.html /docs/1.9/security/iam-api/
+/docs/1.9/administration/id-and-access-mgt/index.html /docs/1.9/security/
+/docs/1.9/administration/id-and-access-mgt/managing-authentication/index.html /docs/1.9/security/managing-authentication/
+/docs/1.9/administration/id-and-access-mgt/user-management/index.html /docs/1.9/security/user-management/
+/docs/1.9/administration/index.html /docs/1.9/administering-clusters/
 /docs/1.9/administration/installing/cloud/aws/advanced/aws-ami/index.html /docs/1.9/installing/cloud/aws/advanced/aws-ami/
 /docs/1.9/administration/installing/cloud/aws/advanced/aws-custom/index.html /docs/1.9/administration/installing/cloud/aws/advanced/
 /docs/1.9/administration/installing/cloud/aws/advanced/index.html /docs/1.9/installing/cloud/aws/advanced/
@@ -93,7 +96,11 @@
 /docs/1.9/administration/installing/cloud/aws/basic/index.html /docs/1.9/installing/cloud/aws/basic/
 /docs/1.9/administration/installing/cloud/aws/index.html /docs/1.9/installing/cloud/aws/
 /docs/1.9/administration/installing/cloud/aws/removeaws/index.html /docs/1.9/installing/cloud/aws/removeaws/
+/docs/1.9/administration/installing/cloud/azure/index.html /docs/1.9/installing/cloud/azure/
+/docs/1.9/administration/installing/cloud/digitalocean/index.html /docs/1.9/installing/cloud/digitalocean/
+/docs/1.9/administration/installing/cloud/gce/index.html /docs/1.9/installing/cloud/gce/
 /docs/1.9/administration/installing/cloud/index.html /docs/1.9/installing/cloud/
+/docs/1.9/administration/installing/cloud/packet/index.html /docs/1.9/installing/cloud/packet/
 /docs/1.9/administration/installing/custom/add-a-node/index.html /docs/1.9/administering-clusters/add-a-node/
 /docs/1.9/administration/installing/custom/advanced/index.html /docs/1.9/installing/custom/advanced/
 /docs/1.9/administration/installing/custom/cli/index.html /docs/1.9/installing/custom/cli/
@@ -102,6 +109,7 @@
 /docs/1.9/administration/installing/custom/convert-agent-type/index.html /docs/1.9/administering-clusters/convert-agent-type/
 /docs/1.9/administration/installing/custom/gui/index.html /docs/1.9/installing/custom/gui/
 /docs/1.9/administration/installing/custom/index.html /docs/1.9/installing/custom/
+/docs/1.9/administration/installing/custom/system-requirements/index.html /docs/1.9/installing/custom/system-requirements/
 /docs/1.9/administration/installing/custom/system-requirements/index.html /docs/1.9/installing/custom/system-requirements/
 /docs/1.9/administration/installing/custom/system-requirements/install-docker-centos/index.html /docs/1.9/installing/custom/system-requirements/install-docker-centos/
 /docs/1.9/administration/installing/custom/troubleshooting/index.html /docs/1.9/installing/troubleshooting/
@@ -133,12 +141,16 @@
 /docs/1.9/administration/monitoring/metrics/quickstart/index.html /docs/1.9/metrics/quickstart/
 /docs/1.9/administration/monitoring/nagios/index.html /docs/1.9/administration/monitoring/performance-monitoring/nagios/
 /docs/1.9/administration/monitoring/performance-monitoring/index.html /docs/1.9/monitoring/performance-monitoring/
+/docs/1.9/administration/monitoring/performance-monitoring/nagios/index.html /docs/1.9/monitoring/performance-monitoring/nagios/
 /docs/1.9/administration/overlay-networks/index.html /docs/1.9/administration/virtual-networks/
 /docs/1.9/administration/overlay-networks/ip-per-container/index.html /docs/1.9/administration/virtual-networks/ip-per-container/
 /docs/1.9/administration/overlay-networks/isolation/index.html /docs/1.9/administration/virtual-networks/isolation/
 /docs/1.9/administration/release-notes/index.html /docs/1.9/release-notes/
+/docs/1.9/administration/remove-agent/index.html /docs/1.9/remove-agent/
+/docs/1.9/administration/securing-your-cluster/index.html /docs/1.9/administering-clusters/securing-your-cluster/
 /docs/1.9/administration/storage/index.html /docs/1.9/storage/
 /docs/1.9/administration/storage/mount-disk-resources/index.html /docs/1.9/storage/mount-disk-resources/
+/docs/1.9/administration/storage/nfs/index.html /docs/1.9/storage/nfs/
 /docs/1.9/administration/tls-ssl/haproxy-adminrouter/index.html /docs/1.9/networking/tls-ssl/haproxy-adminrouter/
 /docs/1.9/administration/tls-ssl/index.html /docs/1.9/networking/tls-ssl/
 /docs/1.9/administration/upgrading/index.html /docs/1.9/installing/upgrading/
@@ -146,6 +158,8 @@
 /docs/1.9/administration/virtual-networks/index.html /docs/1.9/networking/virtual-networks/
 /docs/1.9/administration/virtual-networks/ip-per-container/index.html /docs/1.9/networking/virtual-networks/ip-per-container/
 /docs/1.9/administration/virtual-networks/isolation/index.html /docs/1.9/networking/virtual-networks/isolation/
+/docs/1.9/debugging/cli-debugging/task-exec/quickstart/index.html /docs/1.9/monitoring/debugging/cli-debugging/task-exec/
+/docs/1.9/development/index.html /docs/1.9/developing-services/
 /docs/1.9/overview/components/index.html /docs/1.9/overview/architecture/components/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-list-providers/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-list-providers/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-login/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-login/
@@ -241,6 +255,7 @@
 /docs/1.9/usage/cli/enterprise-cli/index.html /docs/1.9/cli/enterprise-cli/
 /docs/1.9/usage/cli/index.html /docs/1.9/cli/
 /docs/1.9/usage/cli/install/index.html /docs/1.9/cli/install/
+/docs/1.9/usage/cli/multi-cluster-cli/index.html /docs/1.9/cli/multi-cluster-cli/
 /docs/1.9/usage/cli/uninstall/index.html /docs/1.9/cli/uninstall/
 /docs/1.9/usage/cli/update/index.html /docs/1.9/cli/update/
 /docs/1.9/usage/containerizers/index.html /docs/1.9/deploying-services/containerizers/
@@ -253,6 +268,7 @@
 /docs/1.9/usage/gpu/index.html /docs/1.9/deploying-services/gpu/
 /docs/1.9/usage/gpu/index.html /docs/1.9/deploying-services/gpu/config/
 /docs/1.9/usage/gpu/limitations/index.html /docs/1.9/deploying-services/gpu/limitations/
+/docs/1.9/usage/index.html /docs/1.9/
 /docs/1.9/usage/jobs/examples/index.html /docs/1.9/deploying-jobs/examples/
 /docs/1.9/usage/jobs/getting-started/index.html /docs/1.9/deploying-jobs/quickstart/
 /docs/1.9/usage/jobs/index.html /docs/1.9/deploying-jobs/
@@ -272,8 +288,12 @@
 /docs/1.9/usage/managing-services/list/index.html /docs/1.9/usage/managing-services/monitoring/
 /docs/1.9/usage/managing-services/monitor-services/index.html /docs/1.9/deploying-services/monitor-services/
 /docs/1.9/usage/managing-services/monitoring/index.html /docs/1.9/usage/managing-services/monitor-services/
+/docs/1.9/usage/managing-services/package-api/index.html /docs/1.9/deploying-services/package-api/
 /docs/1.9/usage/managing-services/rest-api/index.html /docs/1.9/deploying-services/marathon-api/
+/docs/1.9/usage/managing-services/scale-service/index.html /docs/1.9/deploying-services/scale-service/
 /docs/1.9/usage/managing-services/service-ports/index.html /docs/1.9/deploying-services/service-ports/
+/docs/1.9/usage/managing-services/task-handling/configure-task-handling/index.html /docs/1.9/deploying-services/task-handling/configure-task-handling/
+/docs/1.9/usage/managing-services/task-handling/index.html /docs/1.9/deploying-services/task-handling/
 /docs/1.9/usage/managing-services/uninstall/index.html /docs/1.9/deploying-services/uninstall/
 /docs/1.9/usage/managing-services/update-user-service/index.html /docs/1.9/deploying-services/update-user-service/
 /docs/1.9/usage/marathon/application-basics/index.html /docs/1.9/usage/managing-services/creating-services/
@@ -314,6 +334,7 @@
 /docs/1.9/usage/storage/persistent-volume/index.html /docs/1.9/storage/persistent-volume/
 /docs/1.9/usage/tutorials/autoscaling/cpu-memory/index.html /docs/1.9/tutorials/autoscaling/cpu-memory/
 /docs/1.9/usage/tutorials/autoscaling/index.html /docs/1.9/tutorials/autoscaling/
+/docs/1.9/usage/tutorials/autoscaling/microscaling-queue/index.html /docs/1.9/tutorials/autoscaling/microscaling-queue/
 /docs/1.9/usage/tutorials/autoscaling/requests-second/index.html /docs/1.9/tutorials/autoscaling/requests-second/
 /docs/1.9/usage/tutorials/create-service/index.html /docs/1.9/tutorials/create-service/
 /docs/1.9/usage/tutorials/deploy-on-marathon/index.html /docs/1.9/tutorials/deploy-on-marathon/
@@ -323,9 +344,9 @@
 /docs/1.9/usage/tutorials/iot_pipeline/index.html /docs/1.9/tutorials/iot_pipeline/
 /docs/1.9/usage/tutorials/public-app/index.html /docs/1.9/usage/managing-services/expose-service/
 /docs/1.9/usage/tutorials/registry/index.html https://github.com/dcos/examples/tree/master/registry/1.8
+/docs/1.9/usage/tutorials/stateful-services/index.html /docs/1.9/tutorials/stateful-services/
 /docs/1.9/usage/tutorials/task-labels/index.html /docs/1.9/tutorials/task-labels/
 /docs/1.9/usage/webinterface/index.html /docs/1.9/gui/
-/docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
 /docs/index.html /docs/latest/
 /docs/latest /docs/latest/
 /docs/support/index.html /community/
