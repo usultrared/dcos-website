@@ -4,7 +4,6 @@
 /docs /docs/latest/
 /docs/1.7/administration/dcosarchitecture/security/index.html /docs/1.7/overview/
 /docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
-/docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
 /docs/1.7/administration/installing/custom/cli/index.html /docs/1.7/administration/installing/custom/cli/
 /docs/1.7/administration/installing/custom/gui/index.html /docs/1.7/administration/installing/custom/gui/
 /docs/1.7/administration/installing/index.html /docs/1.7/administration/installing/
@@ -109,7 +108,6 @@
 /docs/1.9/administration/installing/custom/convert-agent-type/index.html /docs/1.9/administering-clusters/convert-agent-type/
 /docs/1.9/administration/installing/custom/gui/index.html /docs/1.9/installing/custom/gui/
 /docs/1.9/administration/installing/custom/index.html /docs/1.9/installing/custom/
-/docs/1.9/administration/installing/custom/system-requirements/index.html /docs/1.9/installing/custom/system-requirements/
 /docs/1.9/administration/installing/custom/system-requirements/index.html /docs/1.9/installing/custom/system-requirements/
 /docs/1.9/administration/installing/custom/system-requirements/install-docker-centos/index.html /docs/1.9/installing/custom/system-requirements/install-docker-centos/
 /docs/1.9/administration/installing/custom/troubleshooting/index.html /docs/1.9/installing/troubleshooting/
